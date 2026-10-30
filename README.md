@@ -1,7 +1,5 @@
 # AutoPruner
 
-> OFT checkpoint upload is in progress. The code is available; the download link will be enabled after file verification.
-
 **Agentic Depth Pruning for Vision-Language-Action Models**
 
 [Paper](https://arxiv.org/abs/2610.23880) · [OFT checkpoint](https://huggingface.co/123pyLeo/AutoPruner-OFT-Object) · [中文安装指南](docs/NEW_SERVER.md)

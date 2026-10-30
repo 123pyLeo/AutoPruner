@@ -1,7 +1,5 @@
 # 剪枝权重
 
-> OFT checkpoint upload is in progress. The code is available; the download link will be enabled after file verification.
-
 本次发布 [OFT Object 剪枝权重](https://huggingface.co/123pyLeo/AutoPruner-OFT-Object)。StarVLA 和 FastWAM 的独立使用包仍在准备，暂不提供下载。
 
 | 权重 | 状态 |

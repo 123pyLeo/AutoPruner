@@ -1,16 +1,16 @@
 {
   "format": "autoprune-model-index-v1",
   "date": "2026-10-30",
-  "public_downloads_available": false,
-  "note": "Preparation and validation index. Null download URLs mean no hosted artifact has been published.",
+  "public_downloads_available": true,
+  "note": "OFT Object weights are publicly hosted. StarVLA and FastWAM remain reference integrations; their standalone packages are not released.",
   "models": [
     {
       "id": "oft-object-k28",
       "family": "OpenVLA-OFT",
       "suite": "libero_object",
-      "published": false,
-      "download_url": null,
-      "status": "physical_export_prepared_locally_and_reload_checked",
+      "published": true,
+      "download_url": "https://huggingface.co/123pyLeo/AutoPruner-OFT-Object",
+      "status": "published_and_remote_file_checksums_verified",
       "original_layers": 32,
       "loaded_layers": 4,
       "removed_layers": [
@@ -98,9 +98,7 @@
         "rerun_here": false
       },
       "release_inference_command": "python -m autoprune.eval_oft_export --exported MODEL_DIR --suite libero_object --trials 1 --max-eval-tasks 1",
-      "remaining": [
-        "Host the reviewed artifact and set an actual download URL"
-      ],
+      "remaining": [],
       "fresh_downloaded_weight_evaluation": {
         "successes": 1,
         "episodes": 1,
@@ -108,7 +106,8 @@
         "calibration_data_required": false,
         "api_required": false,
         "original_search_required": false
-      }
+      },
+      "revision": "a7cb1526750cd847219237595e5b0487b7345254"
     },
     {
       "id": "starvla-object-k10",
