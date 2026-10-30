@@ -1,0 +1,68 @@
+{
+  "purpose": "Generic model-adapter software contract review, separate from robot performance",
+  "review": "docs/MODEL_PLUGIN_REVIEW.md",
+  "regression_tests_passed": 89,
+  "external_installed_plugin": {
+    "status": "passed",
+    "installed_wheel_outside_checkout": true,
+    "torch_installed": false,
+    "external_plugin_module": "user_adapter:ExamplePlugin",
+    "plugin_options": {
+      "n_layers": 6,
+      "suite": "custom_bench",
+      "chunk": 3,
+      "action_dim": 4,
+      "recovery_steps": 2
+    },
+    "winner_meets_spec": true,
+    "export_format": "autoprune-plugin-v1",
+    "native_format": "autoprune-synthetic-plan-v1",
+    "files_verified": 2,
+    "synthetic": true,
+    "real_second_architecture_verified": false
+  },
+  "real_oft_compatibility_check": {
+    "status": "passed",
+    "boundaries": 33,
+    "capture_action_shape": [
+      2,
+      8,
+      7
+    ],
+    "predicted_action_shape": [
+      2,
+      8,
+      7
+    ],
+    "knockout_action_shape": [
+      2,
+      8,
+      7
+    ],
+    "suite": "libero_object",
+    "n_layers": 32
+  },
+  "wheel_sha256": "1cd300b72a35e561a86037f94dfced57b095ea5a6ee88cf711cf12c79db056f6",
+  "artifacts_sha256": {
+    "installed_plugin_check.json": "d93054230dda4898e05e146e37d152f249a65ac668ba1d5857978c1eb07e0356",
+    "oft-compatibility/result.json": "467748a3e3b844749339cc3764d8e8f72a4859f9dd30df03cafb261a900b322e",
+    "final-candidate-checks.log": "654a4cf14b6b3c95564289a3549e69f1ab12b6b3a0c3afa833aab583271d6be5"
+  },
+  "new_checks": [
+    "Constructor configuration and runtime records",
+    "Plugin task vocabulary and defaults, including names containing Object",
+    "Preflight sees selected suite",
+    "All residual boundaries, aligned shapes and finite arrays",
+    "Recipe identity cannot change silently",
+    "Search feedback and winner selection on six layers",
+    "Same-command native export, receipt and resource checksums",
+    "Missing exporter, empty output, symlinks and corrupt checksums fail explicitly"
+  ],
+  "limits": [
+    "Synthetic external plugin is not a second real robot model",
+    "Generic file integrity does not establish native action equivalence",
+    "Full OFT training and rollouts were not repeated for this interface patch"
+  ],
+  "framework_sources_modified": true,
+  "original_experiment_sources_unchanged": true
+}

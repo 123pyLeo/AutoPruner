@@ -1,0 +1,43 @@
+{
+  "scope": "Reference components only. Not complete StarVLA/FastWAM training integrations.",
+  "upstreams": {
+    "starvla": {
+      "url": "https://github.com/starVLA/starVLA",
+      "commit": "985c2238627481f25476fbee478083812dd82a21"
+    },
+    "fastwam": {
+      "url": "https://github.com/ZhaoRunyi/fastwam",
+      "commit": "7ddd3669d8d1d8d914844c153585faf5e2021196"
+    }
+  },
+  "files": [
+    {
+      "source": "starVLA-Robotwin2.0/starVLA/starVLA/model/modules/adapter/__init__.py",
+      "destination": "examples/starvla/__init__.py",
+      "source_sha256": "2001cc9992178bbb62c945702e893ed82539f187e34d9f2d305d05cf395a9e2d",
+      "release_sha256": "2001cc9992178bbb62c945702e893ed82539f187e34d9f2d305d05cf395a9e2d",
+      "changes": "Unchanged reference extraction; no trainer or model loader imported."
+    },
+    {
+      "source": "starVLA-Robotwin2.0/starVLA/starVLA/model/modules/adapter/layer_pruning.py",
+      "destination": "examples/starvla/layer_pruning.py",
+      "source_sha256": "92fe2ea070202ef3e54932040e4a4fabc917d2f0332b2c1f8160157f51b727bd",
+      "release_sha256": "92fe2ea070202ef3e54932040e4a4fabc917d2f0332b2c1f8160157f51b727bd",
+      "changes": "Unchanged reference extraction; no trainer or model loader imported."
+    },
+    {
+      "source": "starVLA-Robotwin2.0/starVLA/starVLA/model/modules/adapter/boundary_adapter.py",
+      "destination": "examples/starvla/boundary_adapter.py",
+      "source_sha256": "4ed1dafaaf6222f1a39d403a16228d75b34322e0b2383158091a7702c788f9a4",
+      "release_sha256": "4ed1dafaaf6222f1a39d403a16228d75b34322e0b2383158091a7702c788f9a4",
+      "changes": "Unchanged reference extraction; no trainer or model loader imported."
+    },
+    {
+      "source": "FastWAM/src/fastwam/models/wan22/mot.py",
+      "destination": "examples/fastwam/mot-pruning.patch",
+      "source_sha256": "4a001ae1d08da6abe03b0e58e6a3ad48c177f25f5980621407b85f1600e93ea6",
+      "release_sha256": "fd3f85aa5bf927124593d8c9efe9d542c53a71b395fd876a86e9e8b76718cf59",
+      "changes": "Diff against pinned public upstream; removed implicit environment mask loading. Only MoT layer-mask changes; no trainer replacement."
+    }
+  ]
+}

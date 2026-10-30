@@ -1,0 +1,247 @@
+{
+  "format": "autoprune-model-index-v1",
+  "date": "2026-10-30",
+  "public_downloads_available": false,
+  "note": "Preparation and validation index. Null download URLs mean no hosted artifact has been published.",
+  "models": [
+    {
+      "id": "oft-object-k28",
+      "family": "OpenVLA-OFT",
+      "suite": "libero_object",
+      "published": false,
+      "download_url": null,
+      "status": "physical_export_prepared_locally_and_reload_checked",
+      "original_layers": 32,
+      "loaded_layers": 4,
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "mask_semantics": "removed original zero-based layer indices",
+      "recovery": "adapter+head+proprio",
+      "saved_step": 10000,
+      "adapter_bottleneck": 1024,
+      "base_model": "moojink/openvla-7b-oft-finetuned-libero-object",
+      "checkpoint_format": "autoprune-oft-physical-v1",
+      "export_manifest_sha256": "8c807815f8bcd83ccb321835ef605e89e8a28f23d2d20ec7b1570cb47117fbfb",
+      "export_resource_files": 23,
+      "export_total_bytes": 4137957393,
+      "source_recovery_components": [
+        {
+          "file": "adapter--10000_checkpoint.pt",
+          "bytes": 16787666,
+          "sha256": "ee8abced01ba8c01d3a87d200af39e27ca207604e7e7c0bbd938b66090583299"
+        },
+        {
+          "file": "action_head--10000_checkpoint.pt",
+          "bytes": 302242398,
+          "sha256": "84e65edf48dd2c227be64e7147d5fe82c0c559e7dc5e8becd664453c095c2a7b"
+        },
+        {
+          "file": "proprio_projector--10000_checkpoint.pt",
+          "bytes": 67275120,
+          "sha256": "1b1ac7e5380bb25a9449eb7fc4ebe2625609ecaf6dd54e7e5bec726fae6f587f"
+        },
+        {
+          "file": "dataset_statistics.json",
+          "bytes": 3022,
+          "sha256": "2bff9cb26fea5d50522fc327f71362dda38252dfc9003aae444259ff96371aa7"
+        }
+      ],
+      "native_action_reload": {
+        "samples": 2,
+        "shape": [
+          2,
+          8,
+          7
+        ],
+        "max_abs_error": 0.0
+      },
+      "new_bounded_rollout": {
+        "successes": 9,
+        "episodes": 10,
+        "seed": 7,
+        "render": "osmesa",
+        "held_out_from_search": false,
+        "environment": "existing_gpu_environment"
+      },
+      "reported_paper_result": {
+        "successes": 463,
+        "episodes": 500,
+        "source": "provenance/paper_results.json",
+        "rerun_here": false
+      },
+      "release_inference_command": "python -m autoprune.eval_oft_export --exported MODEL_DIR --suite libero_object --trials 1 --max-eval-tasks 1",
+      "remaining": [
+        "Host the reviewed artifact and set an actual download URL"
+      ],
+      "fresh_downloaded_weight_evaluation": {
+        "successes": 1,
+        "episodes": 1,
+        "training_data_required": false,
+        "calibration_data_required": false,
+        "api_required": false,
+        "original_search_required": false
+      }
+    },
+    {
+      "id": "starvla-object-k10",
+      "family": "StarVLA QwenOFT",
+      "suite": "libero_object",
+      "published": false,
+      "download_url": null,
+      "status": "native_private_environment_load_checked_portable_package_incomplete",
+      "original_layers": 36,
+      "loaded_layers": 26,
+      "removed_layers": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        17,
+        21,
+        25,
+        27,
+        30
+      ],
+      "mask_semantics": "physically removed original zero-based decoder indices; reconstruct adapter wrappers before loading",
+      "adapter_bottleneck": 64,
+      "adapter_count": 10,
+      "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+      "normalization_key": "franka",
+      "files": [
+        {
+          "file": "pytorch_model.pt",
+          "bytes": 8297326310,
+          "sha256": "1f993d7f5ee0ded39a2ad51cf26828d21e2cde5c85700a2a83eea851f88cf873"
+        },
+        {
+          "file": "config.yaml",
+          "bytes": 2420,
+          "sha256": "7459f7302acde2c634dc871ae4a13162a609e366737b9df3a9671132647cf408"
+        },
+        {
+          "file": "dataset_statistics.json",
+          "bytes": 2961,
+          "sha256": "c297ee4dee39753064d087fc6ba084db5b3fc8b88bc43235474dc9c4c33cae53"
+        }
+      ],
+      "native_private_inference": {
+        "action_shape": [
+          1,
+          8,
+          7
+        ],
+        "missing_parameters": 0,
+        "unexpected_parameters": 0,
+        "robot_rollouts": 0
+      },
+      "reported_paper_result": {
+        "successes": 475,
+        "episodes": 500,
+        "source": "provenance/paper_results.json",
+        "rerun_here": false
+      },
+      "remaining": [
+        "Resolve the measured public-upstream/native action difference or package the verified original inference path",
+        "Package a tested public loader and portable configuration",
+        "Pin the matching upstream/runtime and verify an independent reload",
+        "Host weights with normalization metadata and source notices"
+      ],
+      "public_upstream_comparison": {
+        "samples": 1,
+        "action_shape": [
+          1,
+          8,
+          7
+        ],
+        "max_abs_error": 0.0025184452533721924,
+        "native_repeat_error": 0.0,
+        "passed_at_1e_5": false,
+        "action_space": "normalized action-head output"
+      }
+    },
+    {
+      "id": "fastwam-shared-k6",
+      "family": "FastWAM",
+      "suites": [
+        "libero_object",
+        "libero_spatial",
+        "libero_goal"
+      ],
+      "published": false,
+      "download_url": null,
+      "status": "checkpoint_and_layout_inspected_portable_inference_not_verified",
+      "saved_step": 150,
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mask_semantics": "runtime skip applied to both video and action experts, not a physically shortened saved state",
+      "saved_video_blocks": 30,
+      "saved_action_blocks": 30,
+      "files": [
+        {
+          "file": "step_000150.pt",
+          "bytes": 12041971884,
+          "sha256": "cc51d575b8455f39dffea6a60f66275e4fd09c24fc50f87f81d05252c13e565f"
+        },
+        {
+          "file": "config.yaml",
+          "bytes": 4781,
+          "sha256": "4602a5ee100624e053619fd96747bdb241ce100510a882bdd797f7af99ecfbb3"
+        },
+        {
+          "file": "dataset_stats.json",
+          "bytes": 40939,
+          "sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638"
+        }
+      ],
+      "public_runtime_reference": "examples/fastwam/mot-pruning.patch",
+      "reported_paper_object": {
+        "successes": 499,
+        "episodes": 500,
+        "source": "provenance/paper_results.json",
+        "rerun_here": false
+      },
+      "remaining": [
+        "Package the matching native loader, model configuration, dataset stats and required upstream assets",
+        "Explicitly apply both expert masks during inference",
+        "Run an independent prediction/rollout using the portable package",
+        "Host the artifact and preserve applicable notices"
+      ],
+      "long_checkpoint": "Different five-layer checkpoint remains absent at its historical recorded path"
+    }
+  ]
+}

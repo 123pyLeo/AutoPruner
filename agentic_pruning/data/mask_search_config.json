@@ -1,0 +1,21 @@
+{
+  "_doc": "Search space definition + accumulating list of masks the agent has proposed across iterations. Agent reads tried_masks to avoid re-proposing; appends new entries each iter via the loop driver.",
+  "suite": "libero_object",
+  "total_layers": 32,
+  "mask_form": "single_contiguous_block",
+  "mask_form_doc": "Each mask MUST be one consecutive run of layer indices: [start, start+1, ..., start+k-1]. Multi-segment / gap masks are auto-rejected by driver validation. This matches the recovery adapter design (one boundary cut per mask).",
+  "k_options": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28
+  ],
+  "start_constraint_doc": "valid start \u2208 [0, 32-k]. Agent should DISCOVER which start positions matter via SR feedback, not be told.",
+  "search_strategy_hint": "Progressive: sweep small k (~8) starts first \u2192 identify best contiguous block \u2192 extend k upward into the successful direction. Agent decides progression speed.",
+  "constraint": "Single physical mask, one contiguous block only; recovery via swappable modules.",
+  "tried_masks": [],
+  "archive": {}
+}

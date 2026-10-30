@@ -1,0 +1,165 @@
+--- a/src/fastwam/models/wan22/mot.py
++++ b/src/fastwam/models/wan22/mot.py
+@@ -54,6 +54,56 @@
+         for name in self.expert_order:
+             expert = self.mixtures[name]
+             logger.info(f"  Expert '{name}': num_params={sum(p.numel() for p in expert.parameters()) / 1e9:.2f} B")
++
++        # --- Layer-pruning scaffold (coupled / per-expert) -------------------
++        # keep_video[i] / keep_action[i] == False makes layer i an identity
++        # passthrough for that expert. Semantics across the three forward paths:
++        #   * both dropped (coupled): layer fully skipped; video cache slot is
++        #     a None placeholder; action layer is skipped too -> real compute cut.
++        #   * video dropped, action kept (diagnostic): video tokens are NOT
++        #     refined at layer i, but its K/V is still cached so the kept action
++        #     layer can attend -> isolates the *representational* value of video
++        #     depth at test time (research hook B).
++        #   * action dropped, video kept: action layer i is identity.
++        self.keep_video = [True] * self.num_layers
++        self.keep_action = [True] * self.num_layers
++
++    # ------------------------------------------------------------------ #
++    # Layer-pruning mask API                                              #
++    # ------------------------------------------------------------------ #
++
++    def set_layer_mask(self, drop_video=(), drop_action=()) -> None:
++        """Mark layers as identity passthrough. Indices are in [0, num_layers)."""
++        n = self.num_layers
++        keep_video = [True] * n
++        keep_action = [True] * n
++        for i in drop_video:
++            if not 0 <= int(i) < n:
++                raise ValueError(f"drop_video index {i} out of range [0,{n}).")
++            keep_video[int(i)] = False
++        for i in drop_action:
++            if not 0 <= int(i) < n:
++                raise ValueError(f"drop_action index {i} out of range [0,{n}).")
++            keep_action[int(i)] = False
++        self.keep_video = keep_video
++        self.keep_action = keep_action
++        logger.info(
++            "[MoT prune] drop_video=%s drop_action=%s -> kept video=%d/%d action=%d/%d",
++            sorted(int(i) for i in drop_video),
++            sorted(int(i) for i in drop_action),
++            sum(keep_video), n, sum(keep_action), n,
++        )
++
++    def reset_layer_mask(self) -> None:
++        self.keep_video = [True] * self.num_layers
++        self.keep_action = [True] * self.num_layers
++
++    @property
++    def pruned_layers(self) -> dict:
++        return {
++            "drop_video": [i for i, k in enumerate(self.keep_video) if not k],
++            "drop_action": [i for i, k in enumerate(self.keep_action) if not k],
++        }
+ 
+     @staticmethod
+     def _split_modulation(block, t_mod: torch.Tensor):
+@@ -299,7 +349,16 @@
+         x = video_tokens
+         kv_cache: list[dict[str, torch.Tensor]] = []
+         for layer_idx in range(self.num_layers):
++            keep_v = self.keep_video[layer_idx]
++            keep_a = self.keep_action[layer_idx]
+             block = expert.blocks[layer_idx]
++
++            # Coupled drop: nothing to compute or cache (the action layer at this
++            # index is skipped too), so video tokens pass through unchanged.
++            if not keep_v and not keep_a:
++                kv_cache.append({"k": None, "v": None})
++                continue
++
+             # Build video Q/K/V from current layer input tokens.
+             (
+                 q,
+@@ -318,25 +377,28 @@
+                 freqs=video_freqs,
+                 t_mod=video_t_mod,
+             )
+-            # Video prefill uses only video self-attention mask.
+-            mixed = self._mixed_attention(
+-                q_cat=q,
+-                k_cat=k,
+-                v_cat=v,
+-                attention_mask=video_attention_mask,
+-            )
+-            # Update video tokens for the next layer and persist current layer K/V.
+-            x = self._apply_post_with_optional_checkpoint(
+-                block=block,
+-                residual_x=residual_x,
+-                gate_msa=gate_msa,
+-                shift_mlp=shift_mlp,
+-                scale_mlp=scale_mlp,
+-                gate_mlp=gate_mlp,
+-                use_gradient_checkpointing=use_gradient_checkpointing,
+-                mixed_slice=mixed,
+-                context_payload=video_context_payload,
+-            )
++            if keep_v:
++                # Video prefill uses only video self-attention mask.
++                mixed = self._mixed_attention(
++                    q_cat=q,
++                    k_cat=k,
++                    v_cat=v,
++                    attention_mask=video_attention_mask,
++                )
++                # Update video tokens for the next layer.
++                x = self._apply_post_with_optional_checkpoint(
++                    block=block,
++                    residual_x=residual_x,
++                    gate_msa=gate_msa,
++                    shift_mlp=shift_mlp,
++                    scale_mlp=scale_mlp,
++                    gate_mlp=gate_mlp,
++                    use_gradient_checkpointing=use_gradient_checkpointing,
++                    mixed_slice=mixed,
++                    context_payload=video_context_payload,
++                )
++            # else: video depth dropped (diagnostic) -> do not refine tokens, but
++            # still persist this layer's K/V so a kept action layer can attend.
+             kv_cache.append({"k": k, "v": v})
+         return kv_cache
+ 
+@@ -390,6 +452,8 @@
+         expert = self.mixtures["action"]
+         x = action_tokens
+         for layer_idx in range(self.num_layers):
++            if not self.keep_action[layer_idx]:
++                continue  # action identity passthrough at this layer (pruned)
+             block = expert.blocks[layer_idx]
+             # Action query/key/value are still step-dependent and must be recomputed each step.
+             (
+@@ -410,9 +474,11 @@
+                 t_mod=action_t_mod,
+             )
+             layer_cache = video_kv_cache[layer_idx]
+-            if "k" not in layer_cache or "v" not in layer_cache:
++            if layer_cache.get("k") is None or layer_cache.get("v") is None:
+                 raise ValueError(
+-                    f"`video_kv_cache[{layer_idx}]` must contain `k` and `v`."
++                    f"Action layer {layer_idx} is kept but `video_kv_cache[{layer_idx}]` is "
++                    f"empty (the video side was coupled-dropped at this index). Use a coupled "
++                    f"drop (FASTWAM_PRUNE_LAYERS) or keep the video cache (FASTWAM_PRUNE_VIDEO)."
+                 )
+ 
+             k_video = layer_cache["k"]
+@@ -470,6 +536,17 @@
+         tokens_all = {k: v for k, v in embeds_all.items()}
+ 
+         for layer_idx in range(self.num_layers):
++            keep_v = self.keep_video[layer_idx]
++            keep_a = self.keep_action[layer_idx]
++            if not keep_v and not keep_a:
++                continue  # coupled drop: identity for all experts at this layer
++            if not (keep_v and keep_a):
++                raise ValueError(
++                    "Asymmetric layer mask is not supported in the joint training forward "
++                    "(route B). Use coupled drops (FASTWAM_PRUNE_LAYERS), or run the "
++                    "per-expert diagnostic only at inference time."
++                )
++
+             q_chunks = []
+             k_chunks = []
+             v_chunks = []

@@ -1,0 +1,8 @@
+{
+  "suite": "libero_object",
+  "dense_sr": 0.95,
+  "n_layers_total": 32,
+  "layers": [],
+  "metric_sources": {},
+  "_doc": "Empty runtime template. No historical per-layer outcomes are seeded."
+}

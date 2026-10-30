@@ -1,0 +1,502 @@
+{
+  "date": "2026-10-24",
+  "purpose": "Bounded software integration acceptance, not paper reproduction",
+  "scope": "Core framework and complete OFT example; StarVLA/FastWAM reference only",
+  "fresh_cpu_venv": {
+    "installed_wheel": true,
+    "model_dependencies_installed": false,
+    "mock_cli_passed": true,
+    "new_entrypoint_help_passed": true
+  },
+  "fresh_oft_checkout": {
+    "pinned_base": "e4287e94541f459edc4feabc4e181f537cd569a8",
+    "files_verified": 91,
+    "fresh_remote_prepare_passed": true,
+    "network_note": "Inherited proxy failed; explicit proxy-free invocation succeeded"
+  },
+  "baseline": {
+    "status": "completed",
+    "calibration_samples": 2,
+    "action_shape": [
+      2,
+      8,
+      7
+    ],
+    "knockout_layer": 22,
+    "successes": 1,
+    "episodes": 1
+  },
+  "training_fixture": {
+    "purpose": "bounded integration only",
+    "source_dataset_version": "1.0.0",
+    "fixture_version": "1.0.1",
+    "frames": 24,
+    "expected_action_chunks": 17,
+    "normalization": "Original dataset normalization values preserved; only sample counts describe the fixture",
+    "source_record_sha256": "0349942d82a6b2479b131573b761cedc1d5673be2ce3fe89b6fec071bd63ce98",
+    "fixture_record_sha256": "39877d7f517857ee75a96a400559fd976c9c6bdcc49f69c84cf408e7ea3fbea7"
+  },
+  "teacher_cache": {
+    "format": "autoprune-teacher-v2",
+    "identity_scheme": "tfds-record+original-frame+dataset-version+tokens",
+    "complete": true,
+    "expected_samples": 17,
+    "num_samples": 17,
+    "image_aug": false
+  },
+  "direct_search": {
+    "run_id": "search_6f5958202b154119b2c0153961ea311e",
+    "synthetic": false,
+    "spec_sr_threshold": 0.0,
+    "allowed_recoveries": "full native menu",
+    "backend_config": {
+      "train_max_steps": 2,
+      "global_batch": 1,
+      "per_gpu_batch_override": null,
+      "adapter_bottleneck": 128,
+      "kl_weight": 1.0,
+      "action_weight": 1.0,
+      "num_steps_before_decay": 1,
+      "calib_samples": 8,
+      "shuffle_buffer_size": 4
+    },
+    "agent": {
+      "model": "deepseek-v4.1-flash-1017",
+      "provider": "openai",
+      "max_tokens": 2048,
+      "timeout": 180.0
+    },
+    "agent_calls": [
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 5.011,
+        "usage": {
+          "completion_tokens": 553,
+          "prompt_tokens": 1780,
+          "total_tokens": 2333,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 50
+          }
+        },
+        "status": "completed"
+      },
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 12.023,
+        "usage": {
+          "completion_tokens": 1382,
+          "prompt_tokens": 2552,
+          "total_tokens": 3934,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 983
+          }
+        },
+        "status": "completed"
+      },
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 15.366,
+        "usage": {
+          "completion_tokens": 2048,
+          "prompt_tokens": 2162,
+          "total_tokens": 4210,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1504
+          }
+        },
+        "status": "completed"
+      },
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 7.542,
+        "usage": {
+          "completion_tokens": 990,
+          "prompt_tokens": 2378,
+          "total_tokens": 3368,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 422
+          }
+        },
+        "status": "completed"
+      },
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 31.317,
+        "usage": {
+          "completion_tokens": 1256,
+          "prompt_tokens": 3676,
+          "total_tokens": 4932,
+          "prompt_tokens_details": {
+            "cached_tokens": 3584
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 927
+          }
+        },
+        "status": "completed"
+      }
+    ],
+    "iterations": [
+      {
+        "iteration": 0,
+        "mask": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "requested_recovery": "direct",
+        "executed_recovery": "direct",
+        "status": "completed",
+        "successes": 1,
+        "episodes": 1,
+        "sr": 1.0,
+        "adapter_step": null,
+        "probe_rounds": 1,
+        "proposal_sha256": "d8024710f67db0a14fe482e1de146bf2063996a51d01102288ed9e010e0f436e",
+        "result_sha256": "c53f72ce1eb97b84a77782b2218c7832453510fc786b28f187b8ea149fed6865"
+      },
+      {
+        "iteration": 1,
+        "mask": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "requested_recovery": "direct",
+        "executed_recovery": "direct",
+        "status": "completed",
+        "successes": 1,
+        "episodes": 1,
+        "sr": 1.0,
+        "adapter_step": null,
+        "probe_rounds": 1,
+        "proposal_sha256": "6fc024e33c3c6947d2fc445b6e3ccc9c4f7ce63dc527a94aebb40b4d19f5c365",
+        "result_sha256": "d9abfa55d1122c334bd7826f2918c1682a3c9deeb39284182d0e1585ed96e07c"
+      }
+    ],
+    "winner": {
+      "iter": 1,
+      "mask": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "recovery": "direct",
+      "sr": 1.0
+    },
+    "winner_meets_spec": true,
+    "request_sha256": "67492c27484433adb259bad2991a19dc660294348aeefbc8684c1fcac91f55a7",
+    "selection_sha256": "2c760f60d9bcb2b51c68dc22a16711e167dc08ef34414a75a0c6eeccdf79a248",
+    "trace_sha256": "61e65ca80c8d7b17bf37fe3c84bef80cdf5aa9ab5ba5448144db0a3a80d525f5"
+  },
+  "recovery_search": {
+    "run_id": "search_a9909f7cf9fb40d387a92bee4f163489",
+    "synthetic": false,
+    "spec_sr_threshold": 0.0,
+    "allowed_recoveries": [
+      "adapter+head+proprio"
+    ],
+    "backend_config": {
+      "train_max_steps": 2,
+      "global_batch": 1,
+      "per_gpu_batch_override": null,
+      "adapter_bottleneck": 128,
+      "kl_weight": 1.0,
+      "action_weight": 1.0,
+      "num_steps_before_decay": 1,
+      "calib_samples": 8,
+      "shuffle_buffer_size": 4
+    },
+    "agent": {
+      "model": "deepseek-v4.1-flash-1017",
+      "provider": "openai",
+      "max_tokens": 4096,
+      "timeout": 180.0
+    },
+    "agent_calls": [
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 6.191,
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 1711,
+          "total_tokens": 2479,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 228
+          }
+        },
+        "status": "completed"
+      },
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 14.585,
+        "usage": {
+          "completion_tokens": 1873,
+          "prompt_tokens": 3007,
+          "total_tokens": 4880,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1377
+          }
+        },
+        "status": "completed"
+      },
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 7.113,
+        "usage": {
+          "completion_tokens": 845,
+          "prompt_tokens": 2036,
+          "total_tokens": 2881,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 330
+          }
+        },
+        "status": "completed"
+      },
+      {
+        "model": "deepseek-v4-1-flash-261017",
+        "seconds": 27.21,
+        "usage": {
+          "completion_tokens": 3722,
+          "prompt_tokens": 3071,
+          "total_tokens": 6793,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3119
+          }
+        },
+        "status": "completed"
+      }
+    ],
+    "iterations": [
+      {
+        "iteration": 0,
+        "mask": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "requested_recovery": "adapter+head+proprio",
+        "executed_recovery": "adapter+head+proprio",
+        "status": "completed",
+        "successes": 0,
+        "episodes": 1,
+        "sr": 0.0,
+        "adapter_step": 2,
+        "probe_rounds": 1,
+        "proposal_sha256": "1fc83cc8b61de252e5ccbb22d6f469507d60a36754a4bf03579634174c3b2ad9",
+        "result_sha256": "ef8dfbb21be761251747335181b12b726e9df8d2dd322f6c51055e84dbdc7877"
+      },
+      {
+        "iteration": 1,
+        "mask": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "requested_recovery": "adapter+head+proprio",
+        "executed_recovery": "adapter+head+proprio",
+        "status": "completed",
+        "successes": 0,
+        "episodes": 1,
+        "sr": 0.0,
+        "adapter_step": 2,
+        "probe_rounds": 1,
+        "proposal_sha256": "45841b912c7a169ec5a3d0c9403744c98548632aad7b28df49bc87972ad75234",
+        "result_sha256": "121a09a7f41b5d809ab8849a009b6639f51420d2399435fee02f692a7fb08782"
+      }
+    ],
+    "winner": {
+      "iter": 1,
+      "mask": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "recovery": "adapter+head+proprio",
+      "sr": 0.0
+    },
+    "winner_meets_spec": true,
+    "request_sha256": "11ef2ad51d6887039b8e5ace0cf1ae1d167ab925b3acfd2ed33b39ee20e3370d",
+    "selection_sha256": "18e94d2ab80615cbfdbe8eaf33e836d2f5f1dc4df0cfd2e4cf54a23d76f74238",
+    "trace_sha256": "b82c5cd5e27238636832b7a68f1f64d7c0fc82b3507680475994e80f23e879b4"
+  },
+  "physical_exports": {
+    "direct": {
+      "run_id": "export_check_32c9e764862941edb399ceca66ed5f38",
+      "status": "passed",
+      "action_shape": [
+        2,
+        8,
+        7
+      ],
+      "max_abs_action_error": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05,
+      "files_verified": 21,
+      "reference": {
+        "role": "reference",
+        "action_shape": [
+          2,
+          8,
+          7
+        ],
+        "loaded_decoder_layers": 26
+      },
+      "physical": {
+        "role": "export",
+        "action_shape": [
+          2,
+          8,
+          7
+        ],
+        "loaded_decoder_layers": 26
+      },
+      "full_robot_evaluation": false,
+      "result_sha256": "f319bca1a4bc6d617a8a5b7250350a70c31446faf73f959e3e4a4e22d22f6643",
+      "reference_actions_sha256": "06cf0c5fbf92dca5b56d336b443c999dc950adc7965c5b611ebe7071a94c18c3",
+      "physical_actions_sha256": "06cf0c5fbf92dca5b56d336b443c999dc950adc7965c5b611ebe7071a94c18c3",
+      "manifest_sha256": "03d3a88ee857be906d7fe9c5efad1f1dc10d76e85b334a2b1e633f2c386f5f69"
+    },
+    "recovery": {
+      "run_id": "export_check_72b887f48f2849f3a2340d1aaa404bd1",
+      "status": "passed",
+      "action_shape": [
+        2,
+        8,
+        7
+      ],
+      "max_abs_action_error": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-05,
+      "files_verified": 21,
+      "reference": {
+        "role": "reference",
+        "action_shape": [
+          2,
+          8,
+          7
+        ],
+        "loaded_decoder_layers": 8
+      },
+      "physical": {
+        "role": "export",
+        "action_shape": [
+          2,
+          8,
+          7
+        ],
+        "loaded_decoder_layers": 8
+      },
+      "full_robot_evaluation": false,
+      "bounded_rollout": {
+        "status": "completed",
+        "sr": 0.0,
+        "successes": 0,
+        "episodes": 1,
+        "seed": 7,
+        "held_out_from_search": false
+      },
+      "result_sha256": "39b763416fb83ac1ae180817d9c2a86f1f9b32a127803e7abf0f69ce73bd73b5",
+      "reference_actions_sha256": "784e348e735f73082a67ec160fadc9fe2a045744d42fc64f5e271ea9cda26284",
+      "physical_actions_sha256": "784e348e735f73082a67ec160fadc9fe2a045744d42fc64f5e271ea9cda26284",
+      "manifest_sha256": "944bff66caf795d8dfe68b3d643bc498ea307f26e5ae8d8a5a03ba3c6345fc98"
+    }
+  },
+  "regression_tests": 75,
+  "optimizer_steps_per_recovery_candidate": 2,
+  "recovery_candidates": 2,
+  "render_backend": "osmesa",
+  "historical_data_or_weights_modified": false,
+  "paper_metrics_reproduced": false,
+  "negative_findings": [
+    "Misplaced calibration validation caused real loader NameError; fixed",
+    "Incomplete LIBERO checkout and stale home configuration; preflight and invocation-local config added",
+    "Prose numeric gates and truncated agent responses; strict shared schema and explicit provider budget added",
+    "4096-wide primal ridge solve excessive for eight samples; equivalent dual solve checked against primal",
+    "Unsupported recovery names silently replaced; implicit replacement removed",
+    "Original full user prompt did not reach agent; forwarding restored",
+    "Direct search did not follow a suggested recovery sequence; separate explicitly restricted recovery search used"
+  ],
+  "limits": [
+    "One task and one trial per candidate, same standard initial state; no held-out claim",
+    "Two optimizer steps on one 24-frame demonstration fixture cannot establish recovery quality",
+    "Both recovery candidates failed their single rollout; threshold zero is explicitly for software acceptance",
+    "Full-data cache generation, long training, full benchmark, fresh GPU dependency installation and whole Git history audit not completed here"
+  ]
+}

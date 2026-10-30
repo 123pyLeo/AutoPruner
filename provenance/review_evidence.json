@@ -1,0 +1,21 @@
+{
+  "before_fixes": {
+    "relative_staging": {
+      "returned_absolute": false,
+      "exists_in_caller": true,
+      "exists_in_subprocess_cwd": false
+    },
+    "nan_sr_accepted_as_winner": true,
+    "probe_normalization_defaults_to_object": true,
+    "silent_fixed_language_fallback": true,
+    "dry_flag_zero_enables_dry_path": true,
+    "teacher_identity_excludes_pixels_and_state": true
+  },
+  "teacher_cache_minimal_check": {
+    "same_tokens_first_insert": true,
+    "same_tokens_different_outputs_second_insert": false,
+    "entries_retained": 1,
+    "meaning": "Demonstrates inability to distinguish observations sharing tokens; does not measure collision frequency in real training data."
+  },
+  "interpretation": "Engineering reproductions only; no real-data collision rate or GPU behavior measured."
+}

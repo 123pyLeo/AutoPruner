@@ -1,0 +1,88 @@
+{
+  "format": "Historical settings reference, not executable training configuration",
+  "layer_indices": "zero-based indices to REMOVE, never indices to keep",
+  "unknown_values": null,
+  "provenance": "../../provenance/paper_results.json",
+  "rows": [
+    {
+      "suite": "libero_goal",
+      "removed_layers": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        17,
+        21,
+        25,
+        27,
+        30
+      ],
+      "paper_sr": 0.92,
+      "recovery": "teacher-guided",
+      "status": "summary and per-task counts agree; exact checkpoint/training lineage still needs binding",
+      "training_overrides": null
+    },
+    {
+      "suite": "libero_spatial",
+      "removed_layers": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        17,
+        21,
+        25,
+        27,
+        30
+      ],
+      "paper_sr": 0.902,
+      "recovery": "teacher-guided",
+      "status": "summary and per-task counts agree; exact checkpoint/training lineage still needs binding",
+      "training_overrides": null
+    },
+    {
+      "suite": "libero_object",
+      "removed_layers": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        17,
+        21,
+        25,
+        27,
+        30
+      ],
+      "paper_sr": 0.95,
+      "recovery": "teacher-guided",
+      "status": "summary and per-task counts agree; exact checkpoint/training lineage still needs binding",
+      "training_overrides": null
+    },
+    {
+      "suite": "libero_10",
+      "removed_layers": [
+        2,
+        4,
+        7,
+        10,
+        13,
+        21,
+        22,
+        27
+      ],
+      "paper_sr": 0.938,
+      "recovery": "demonstration-based, frozen sidecars and kept layers",
+      "status": "eval aggregate and saved training config verified; no independent reload/rollout in this audit",
+      "training_overrides": {
+        "max_steps": 10000,
+        "seed": 42,
+        "freeze_sidecars": true,
+        "unfreeze_kept_layers": false,
+        "distill_enabled": false
+      }
+    }
+  ]
+}

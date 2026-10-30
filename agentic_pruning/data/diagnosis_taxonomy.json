@@ -1,0 +1,53 @@
+{
+  "_doc": "Failure pattern taxonomy. After each eval result, loop driver tests each pattern's 'if' condition; matched patterns produce candidate rule additions. Agent reviews + accepts/rejects in next iteration.",
+  "patterns": [
+    {
+      "id": "direct_collapse",
+      "trigger_if": "recovery == 'direct' AND sr < dense_sr * 0.5",
+      "interpretation": "Direct physical pruning without any recovery module is structurally invalid at this compression level.",
+      "add_rule_template": "Direct pruning of {k}+ layers requires a recovery module; do not propose direct recovery for k>={k} again."
+    },
+    {
+      "id": "anchor_violation",
+      "trigger_if": "sr drops by >10pt when a specific layer is added to the mask compared to a near-twin mask without that layer (same recovery)",
+      "interpretation": "The added layer is a functional anchor whose removal disrupts pipeline.",
+      "add_rule_template": "L{layer_idx} is a functional anchor for {suite}; do not include in mask without explicit ablation justification."
+    },
+    {
+      "id": "recovery_insufficient",
+      "trigger_if": "0.6 < sr < 0.9 AND recovery == 'adapter_only' AND mask_size >= 16",
+      "interpretation": "Adapter alone cannot fully compensate for deeper pruning; action interface needs co-adaptation.",
+      "add_rule_template": "For mask_size>={k}, propose joint recovery (adapter + action_head + proprio) instead of adapter_only."
+    },
+    {
+      "id": "recovery_match_dense",
+      "trigger_if": "sr >= dense_sr - 0.02 (within 2pt)",
+      "interpretation": "Mask + recovery combination achieves dense-level performance; structure is validated.",
+      "add_rule_template": "Mask {mask_summary} with {recovery} reaches dense-level SR for {suite}; record as validated configuration."
+    },
+    {
+      "id": "proxy_disagrees_closed_loop",
+      "trigger_if": "static proxy (FIM/CKA) ranks a layer as removable BUT closed-loop SR shows >5pt drop when removed",
+      "interpretation": "Static proxy missed a functional role only visible in closed-loop execution.",
+      "add_rule_template": "L{layer_idx} is closed-loop-critical despite low static score; distrust static-only rankings for this suite."
+    },
+    {
+      "id": "sr_cliff_detected",
+      "trigger_if": "two iterations with same recovery have masks differing by <=2 layers AND |sr_a - sr_b| > 0.10",
+      "interpretation": "The small mask difference (<=2 layers) drives a large SR jump; the differing layers are anchor candidates. Generalizes anchor_violation to bidirectional swaps and 2-layer diffs (e.g., the L30 cliff at k=28 vs k=29).",
+      "add_rule_template": "Layers {differing_layers} produce SR cliff {sr_lower:.2f}->{sr_higher:.2f} (Delta={delta:.2f}pt) between near-twin masks; treat as anchor candidates."
+    },
+    {
+      "id": "k_progression_violation",
+      "trigger_if": "current k > max_k_in_history + 8 AND max_sr_in_history < 0.85",
+      "interpretation": "Soft warning: agent jumped k aggressively without consolidating wins at smaller k first. Methodology says: sweep at k=K to find best start, push k by +4..+8 once SR is solid. Skipping ahead may bypass important calibration.",
+      "add_rule_template": "Soft warning: k={current_k} jumps >8 layers beyond prior max k={max_k_seen} while best SR={max_sr:.2f} (< 0.85). Consider consolidating at smaller k first."
+    },
+    {
+      "id": "inverted_anchor_priority",
+      "trigger_if": "current mask KEEPS a layer with training_free_sr >= 0.85 AND REMOVES a layer with training_free_sr < 0.50",
+      "interpretation": "The agent's mask choice contradicts per-layer training-free SR evidence: kept layer is individually easy to remove, while removed layer is individually a hard anchor. Suggests a potential swap. Soft signal — recovery training MAY rescue hard anchors, but the priority is reversed.",
+      "add_rule_template": "INVERTED anchor priority: kept L{kept_L}(tf-SR={kept_sr:.2f}) is easily-removable while removed L{removed_L}(tf-SR={removed_sr:.2f}) is a hard anchor. Consider swap."
+    }
+  ]
+}

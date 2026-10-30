@@ -1,0 +1,45 @@
+# Separate GPU environment. Reuse the pinned upstream package's dependencies.
+# These versions match the inspected OFT runtime for the model API.
+torch==2.2.0
+torchvision==0.17.0
+transformers @ git+https://github.com/moojink/transformers-openvla-oft.git@bc339d9ad707454c0c115970db43c260067c61ab
+timm==0.9.10
+numpy==1.26.4
+tensorflow==2.15.0
+tensorflow-datasets==4.9.3
+# Newer metadata protos require protobuf APIs absent from the TF 2.15 stack.
+tensorflow-metadata==1.17.3
+draccus==0.8.0
+omegaconf==2.3.0
+opencv-python<4.12
+accelerate==1.13.0
+tokenizers==0.19.1
+peft==0.11.1
+huggingface-hub==0.36.2
+dlimp @ git+https://github.com/moojink/dlimp_openvla@040105d256bd28866cc6620621a3d5f7b6b91b46
+tensorflow-graphics==2021.12.3
+diffusers==0.30.3
+protobuf<5
+h5py>=3.10
+rich
+einops
+json-numpy
+jsonlines
+matplotlib
+sentencepiece==0.1.99
+wandb
+imageio[ffmpeg]
+uvicorn
+fastapi
+safetensors
+robosuite==1.4.1
+# Match the physics runtime used in the current bounded OFT acceptance.
+# This is not an assertion about the historical paper environment.
+mujoco==3.7.0
+bddl
+easydict
+cloudpickle
+gym
+pytest>=8
+# Install the prepared OFT checkout with pip install -e separately.
+# Follow its SETUP.md for hardware-specific Flash Attention installation.

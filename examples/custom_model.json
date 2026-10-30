@@ -1,0 +1,7 @@
+{
+  "n_layers": 6,
+  "suite": "custom_bench",
+  "chunk": 3,
+  "action_dim": 4,
+  "recovery_steps": 2
+}

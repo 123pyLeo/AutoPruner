@@ -1,0 +1,383 @@
+{
+  "scope": "Full scan of the four existing local RLDS training datasets and the four legacy no-image-augmentation teacher caches; not a historical paper-lineage proof or a robot-performance evaluation.",
+  "total_episodes": 1693,
+  "total_samples": 261614,
+  "ambiguous_observation_groups": 3,
+  "samples_in_ambiguous_groups": 14,
+  "uncached_samples": 30,
+  "ambiguous_group_sample_fraction": 5.3513955675155e-05,
+  "suite_results": [
+    {
+      "suite": "libero_object",
+      "sampling": "all records",
+      "episodes": 454,
+      "action_chunk_samples": 63806,
+      "unique_token_keys": 63798,
+      "duplicate_key_samples": 8,
+      "ambiguous_observation_keys": 1,
+      "samples_in_ambiguous_groups": 9,
+      "ambiguous_groups_present_in_cache": 1,
+      "samples_matching_existing_cache": 63806,
+      "cache_hit_fraction": 1.0,
+      "existing_cache_key_count": 63798,
+      "metadata": {
+        "image_aug": false,
+        "num_patches": 513,
+        "use_proprio": true,
+        "num_samples": 63798,
+        "num_actions_chunk": 8,
+        "action_dim": 7
+      },
+      "missing_by_language": {},
+      "distinct_task_instructions": 10,
+      "witnesses": [
+        {
+          "key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "cache_hit": true,
+          "first": {
+            "shard": "libero_object-train.tfrecord-00005-of-00032",
+            "record": 3,
+            "step": 86
+          },
+          "second": {
+            "shard": "libero_object-train.tfrecord-00005-of-00032",
+            "record": 3,
+            "step": 87
+          },
+          "state_different": true,
+          "encoded_images_different": true,
+          "max_abs_state_delta": 0.010539300739765167
+        }
+      ],
+      "normalization_file_sha256": "62c140b3ffc14f552c388aa92f3623ab16a1b45ad74654d74e476973e483c226",
+      "tokenizer_json_sha256": "8f5e2869e1807b8bb3c7717a294539c37e9de5d728ad60e31ef57e83cc5ea527",
+      "seconds": 35.35,
+      "normalization_implementation": "Actual pinned normalize_action_and_proprio function with original NumPy metadata dtypes",
+      "scope": "Raw observation distinction; no teacher output differences or robot behavior inferred."
+    },
+    {
+      "suite": "libero_spatial",
+      "sampling": "all records",
+      "episodes": 432,
+      "action_chunk_samples": 49946,
+      "unique_token_keys": 49946,
+      "duplicate_key_samples": 0,
+      "ambiguous_observation_keys": 0,
+      "samples_in_ambiguous_groups": 0,
+      "ambiguous_groups_present_in_cache": 0,
+      "samples_matching_existing_cache": 49936,
+      "cache_hit_fraction": 0.9997997837664678,
+      "existing_cache_key_count": 49936,
+      "metadata": {
+        "image_aug": false,
+        "num_patches": 513,
+        "use_proprio": true,
+        "num_samples": 49936,
+        "num_actions_chunk": 8,
+        "action_dim": 7
+      },
+      "missing_by_language": {
+        "pick up the black bowl on the ramekin and place it on the plate": 2,
+        "pick up the black bowl next to the cookie box and place it on the plate": 1,
+        "pick up the black bowl on the cookie box and place it on the plate": 1,
+        "pick up the black bowl next to the plate and place it on the plate": 1,
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate": 2,
+        "pick up the black bowl between the plate and the ramekin and place it on the plate": 1,
+        "pick up the black bowl from table center and place it on the plate": 2
+      },
+      "distinct_task_instructions": 10,
+      "witnesses": [],
+      "normalization_file_sha256": "ff2309278e17efb22ed568ed5040fff68d40ca0ddfcac7e84f3033c023e61165",
+      "tokenizer_json_sha256": "8f5e2869e1807b8bb3c7717a294539c37e9de5d728ad60e31ef57e83cc5ea527",
+      "seconds": 26.86,
+      "normalization_implementation": "Actual pinned normalize_action_and_proprio function with original NumPy metadata dtypes",
+      "scope": "Raw observation distinction; no teacher output differences or robot behavior inferred."
+    },
+    {
+      "suite": "libero_goal",
+      "sampling": "all records",
+      "episodes": 428,
+      "action_chunk_samples": 49046,
+      "unique_token_keys": 49046,
+      "duplicate_key_samples": 0,
+      "ambiguous_observation_keys": 0,
+      "samples_in_ambiguous_groups": 0,
+      "ambiguous_groups_present_in_cache": 0,
+      "samples_matching_existing_cache": 49042,
+      "cache_hit_fraction": 0.999918443909799,
+      "existing_cache_key_count": 49042,
+      "metadata": {
+        "image_aug": false,
+        "num_patches": 513,
+        "use_proprio": true,
+        "num_samples": 49042,
+        "num_actions_chunk": 8,
+        "action_dim": 7
+      },
+      "missing_by_language": {
+        "put the bowl on the stove": 2,
+        "put the cream cheese in the bowl": 2
+      },
+      "distinct_task_instructions": 10,
+      "witnesses": [],
+      "normalization_file_sha256": "a1dae53dda2d9787f8f8dbae7ad0eeb1067662283718f77e0213f55cc10c2186",
+      "tokenizer_json_sha256": "8f5e2869e1807b8bb3c7717a294539c37e9de5d728ad60e31ef57e83cc5ea527",
+      "seconds": 25.04,
+      "normalization_implementation": "Actual pinned normalize_action_and_proprio function with original NumPy metadata dtypes",
+      "scope": "Raw observation distinction; no teacher output differences or robot behavior inferred."
+    },
+    {
+      "suite": "libero_10",
+      "sampling": "all records",
+      "episodes": 379,
+      "action_chunk_samples": 98816,
+      "unique_token_keys": 98813,
+      "duplicate_key_samples": 3,
+      "ambiguous_observation_keys": 2,
+      "samples_in_ambiguous_groups": 5,
+      "ambiguous_groups_present_in_cache": 2,
+      "samples_matching_existing_cache": 98800,
+      "cache_hit_fraction": 0.9998380829015544,
+      "existing_cache_key_count": 98797,
+      "metadata": {
+        "image_aug": false,
+        "num_patches": 513,
+        "use_proprio": true,
+        "num_samples": 98797,
+        "num_actions_chunk": 8,
+        "action_dim": 7
+      },
+      "missing_by_language": {
+        "put both the alphabet soup and the cream cheese box in the basket": 2,
+        "put the black bowl in the bottom drawer of the cabinet and close it": 4,
+        "turn on the stove and put the moka pot on it": 2,
+        "put the white mug on the plate and put the chocolate pudding to the right of the plate": 1,
+        "put the white mug on the left plate and put the yellow and white mug on the right plate": 2,
+        "put the yellow and white mug in the microwave and close it": 2,
+        "put both the cream cheese box and the butter in the basket": 1,
+        "put both the alphabet soup and the tomato sauce in the basket": 2
+      },
+      "distinct_task_instructions": 10,
+      "witnesses": [
+        {
+          "key": "b9b079d570f586da9a47150be655f6661d673e3618eedc2edd1bcf0a842d9547",
+          "cache_hit": true,
+          "first": {
+            "shard": "liber_o10-train.tfrecord-00000-of-00032",
+            "record": 6,
+            "step": 96
+          },
+          "second": {
+            "shard": "liber_o10-train.tfrecord-00000-of-00032",
+            "record": 6,
+            "step": 97
+          },
+          "state_different": true,
+          "encoded_images_different": true,
+          "max_abs_state_delta": 0.05083024501800537
+        },
+        {
+          "key": "c91c24651ded8812459ad640186f29fbfc2871b41ae2e8a8e66617d0c6aae2f4",
+          "cache_hit": true,
+          "first": {
+            "shard": "liber_o10-train.tfrecord-00003-of-00032",
+            "record": 4,
+            "step": 79
+          },
+          "second": {
+            "shard": "liber_o10-train.tfrecord-00003-of-00032",
+            "record": 4,
+            "step": 80
+          },
+          "state_different": true,
+          "encoded_images_different": true,
+          "max_abs_state_delta": 0.05385833978652954
+        }
+      ],
+      "normalization_file_sha256": "8f578debdf0b4a7e073da6044078d534f64c67bf2c8ffd96099e55e2db3cb23d",
+      "tokenizer_json_sha256": "8f5e2869e1807b8bb3c7717a294539c37e9de5d728ad60e31ef57e83cc5ea527",
+      "seconds": 53.42,
+      "normalization_implementation": "Actual pinned normalize_action_and_proprio function with original NumPy metadata dtypes",
+      "scope": "Raw observation distinction; no teacher output differences or robot behavior inferred."
+    }
+  ],
+  "actual_input_witnesses": [
+    {
+      "suite": "libero_object",
+      "key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+      "source_location": {
+        "shard": "libero_object-train.tfrecord-00005-of-00032",
+        "record": 3,
+        "step": 86
+      },
+      "samples": [
+        {
+          "step": 86,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "8e2b9bda2689df8c3574be22a527ab9f90dc8d09fc962ef9b920971517ad9818",
+          "proprio_input_sha256": "4c28cdd9660253db1c41817a4e5206a15d8289944b35d908cfd18ac66244610f",
+          "pixel_elements_different_from_first": 0,
+          "max_abs_bfloat16_proprio_delta": 0.0
+        },
+        {
+          "step": 87,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "dd3dff9cf16e03421270197a8d198986243745b2d884ec5da323b1914f9f3bb0",
+          "proprio_input_sha256": "99b52feb624452e2e97cf85c749762c8e8393ecfc37354c6b0dc9b2515f3cd6e",
+          "pixel_elements_different_from_first": 279532,
+          "max_abs_bfloat16_proprio_delta": 0.037109375
+        },
+        {
+          "step": 88,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "cae2278d1542feadaddba804903defda6b9bc7c8ef8d34587bbad48249b10aec",
+          "proprio_input_sha256": "84b380bfa333faf3dc47ca2f686e803a7146292be0a07be7a3bddc4929068fca",
+          "pixel_elements_different_from_first": 292680,
+          "max_abs_bfloat16_proprio_delta": 0.076171875
+        },
+        {
+          "step": 89,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "0cdd3d7934faedb3db4d509229048351debbd704bfcafae69b92b794c7c64b4e",
+          "proprio_input_sha256": "9ba9040712e1461d60fab195c6dad0776f2ff93220242c6a421709cfc80474d9",
+          "pixel_elements_different_from_first": 300664,
+          "max_abs_bfloat16_proprio_delta": 0.115234375
+        },
+        {
+          "step": 90,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "c6d6cf951d27878edbe40cdf817dc53a4bdf843f38d635dcaf7c77869c382ab6",
+          "proprio_input_sha256": "b39e225917dcbe2482bbe5c0fd0787501313c913ce5c7d2a1f88859a20cc4684",
+          "pixel_elements_different_from_first": 308388,
+          "max_abs_bfloat16_proprio_delta": 0.15625
+        },
+        {
+          "step": 91,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "4c994365fd46c21c75997c250a732ce6ed4383173a690e6beaa3ff7979dd0c03",
+          "proprio_input_sha256": "943eb282d0224f63812887528c2a9fbdd5472987cc37349a59dd997560f5980c",
+          "pixel_elements_different_from_first": 316798,
+          "max_abs_bfloat16_proprio_delta": 0.1962890625
+        },
+        {
+          "step": 92,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "7981b8e6cc416003810532fd74a38969516ee439d685f0acd04c20b8f55a8316",
+          "proprio_input_sha256": "08cccdd201ed4ca999e096c8aed692055728f3d124fbafd198a7ff6c3c26ca48",
+          "pixel_elements_different_from_first": 320196,
+          "max_abs_bfloat16_proprio_delta": 0.236328125
+        },
+        {
+          "step": 93,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "275cdece4c38e01687712050f34db51aab35bbd1b645cc3c84e2ccf398fd46ac",
+          "proprio_input_sha256": "24ec11f62d6d2b31800e1461439705039c5a74fc268af2c845edf89f89cd5eb3",
+          "pixel_elements_different_from_first": 326242,
+          "max_abs_bfloat16_proprio_delta": 0.27734375
+        },
+        {
+          "step": 94,
+          "cache_key": "5cd6dd628fc18de6270c502d27b8f5e0b89248fe516f70a66aa8897b5e8421c8",
+          "pixel_input_sha256": "d08c5d2b7b5e818f127b1b0885ea1a48bc6ffd2789699dab78271a6561fccd67",
+          "proprio_input_sha256": "e7bb35f5d7974ded12402a2bfdcdedf3756170f1085e36344ebdbca2ee68e89d",
+          "pixel_elements_different_from_first": 329532,
+          "max_abs_bfloat16_proprio_delta": 0.318359375
+        }
+      ],
+      "batch_transform_key_conformance": true,
+      "unique_bfloat16_visual_inputs": 9,
+      "unique_bfloat16_proprio_inputs": 9,
+      "cache_lookup_hits": 9,
+      "same_cached_teacher_logits_returned_for_all": true,
+      "gpu_used": false,
+      "teacher_forward_recomputed": false,
+      "interpretation": "Actual distinct model inputs share one stored teacher output. This check does not measure the logits difference an online teacher would produce or downstream SR impact."
+    },
+    {
+      "suite": "libero_10",
+      "key": "b9b079d570f586da9a47150be655f6661d673e3618eedc2edd1bcf0a842d9547",
+      "source_location": {
+        "shard": "liber_o10-train.tfrecord-00000-of-00032",
+        "record": 6,
+        "step": 96
+      },
+      "samples": [
+        {
+          "step": 96,
+          "cache_key": "b9b079d570f586da9a47150be655f6661d673e3618eedc2edd1bcf0a842d9547",
+          "pixel_input_sha256": "16c9876f385a874c7e6f05ddc347cf3e2fa50f0ecccd8fbfb5e6cf6fd8347d30",
+          "proprio_input_sha256": "e0dd916931a7a75d438af539ae4c5c1823153fa7498e1827daba4d9b5f9581ad",
+          "pixel_elements_different_from_first": 0,
+          "max_abs_bfloat16_proprio_delta": 0.0
+        },
+        {
+          "step": 97,
+          "cache_key": "b9b079d570f586da9a47150be655f6661d673e3618eedc2edd1bcf0a842d9547",
+          "pixel_input_sha256": "8ab34ce0ca2e0244013eeadb9638e6c15c4406f02de600ca5baea2352270aa03",
+          "proprio_input_sha256": "58ed7fa7d65823e19d8bcd2c57cada4ae4b09c0788c51176f610e26a7c1def89",
+          "pixel_elements_different_from_first": 271750,
+          "max_abs_bfloat16_proprio_delta": 0.056640625
+        },
+        {
+          "step": 98,
+          "cache_key": "b9b079d570f586da9a47150be655f6661d673e3618eedc2edd1bcf0a842d9547",
+          "pixel_input_sha256": "8f1886ba883b85c4214922578ba8c136fc115a6cfb8d944cafd7909074c19b20",
+          "proprio_input_sha256": "6e5779ea93af98ff79f9c11260b1969753e55af032b991a9b9370d849295bf59",
+          "pixel_elements_different_from_first": 291204,
+          "max_abs_bfloat16_proprio_delta": 0.1298828125
+        }
+      ],
+      "batch_transform_key_conformance": true,
+      "unique_bfloat16_visual_inputs": 3,
+      "unique_bfloat16_proprio_inputs": 3,
+      "cache_lookup_hits": 3,
+      "same_cached_teacher_logits_returned_for_all": true,
+      "gpu_used": false,
+      "teacher_forward_recomputed": false,
+      "interpretation": "Actual distinct model inputs share one stored teacher output. This check does not measure the logits difference an online teacher would produce or downstream SR impact."
+    },
+    {
+      "suite": "libero_10",
+      "key": "c91c24651ded8812459ad640186f29fbfc2871b41ae2e8a8e66617d0c6aae2f4",
+      "source_location": {
+        "shard": "liber_o10-train.tfrecord-00003-of-00032",
+        "record": 4,
+        "step": 79
+      },
+      "samples": [
+        {
+          "step": 79,
+          "cache_key": "c91c24651ded8812459ad640186f29fbfc2871b41ae2e8a8e66617d0c6aae2f4",
+          "pixel_input_sha256": "2fae9856eda4282986cc1dbd1be07f4b697f9131961cadd6f2721bb740c195d0",
+          "proprio_input_sha256": "e8fa1eb0565b37a4ba4547f3cb685937570a3f6810537685d1b94abb1345e148",
+          "pixel_elements_different_from_first": 0,
+          "max_abs_bfloat16_proprio_delta": 0.0
+        },
+        {
+          "step": 80,
+          "cache_key": "c91c24651ded8812459ad640186f29fbfc2871b41ae2e8a8e66617d0c6aae2f4",
+          "pixel_input_sha256": "1b11742787cb28c1d3b0bd96c2930e291b20d0384e40f5a4222aa102d15a56cd",
+          "proprio_input_sha256": "6b2b495d65831a9f914c12ede13c799a39e395252bb360b9c52aa9396b044f86",
+          "pixel_elements_different_from_first": 254372,
+          "max_abs_bfloat16_proprio_delta": 0.01953125
+        }
+      ],
+      "batch_transform_key_conformance": true,
+      "unique_bfloat16_visual_inputs": 2,
+      "unique_bfloat16_proprio_inputs": 2,
+      "cache_lookup_hits": 2,
+      "same_cached_teacher_logits_returned_for_all": true,
+      "gpu_used": false,
+      "teacher_forward_recomputed": false,
+      "interpretation": "Actual distinct model inputs share one stored teacher output. This check does not measure the logits difference an online teacher would produce or downstream SR impact."
+    }
+  ],
+  "gpu_used": false,
+  "online_teacher_recomputed": false,
+  "robot_success_rate_effect_measured": false,
+  "audit_script_sha256": {
+    "scan.py": "2215d102c40e4f02eac832cde4bfea4f1e834a4410ddd57f03f36f3534d1ec5f",
+    "verify_witness.py": "5ae55d9b510517478b50b9638e087975778615743bcb2e80460c6e135eaded2d",
+    "scripts/audit_teacher_cache.py": "ab67d8b21ef1640b38f0a32230ee6d95e6c1a359d73e242c3a2054d83ca8be51"
+  }
+}

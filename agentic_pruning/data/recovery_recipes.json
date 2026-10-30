@@ -1,0 +1,13 @@
+{
+  "_doc": "Recovery recipe(s) the agent can choose from. CURRENTLY FIXED to a single recipe ('adapter+head+proprio' with MLP adapter, bn=1024) because this is the empirically-best recipe across all prior experiments, and the framework's closed-loop driver hardcodes --freeze_sidecars False during training. The other recipes (direct / adapter_only / adapter_mlp_0.5M) are intentionally removed from the agent's choice set: prior pilots showed they consistently under-recover at the mask sizes we care about. Agent must emit recovery='adapter+head+proprio' in its JSON output.",
+  "recipes": [
+    {
+      "id": "adapter+head+proprio",
+      "description": "FIXED recovery: MLP adapter (bn=1024) + action_head + proprio_projector all trainable. Empirically the best recipe (used to reach 96.5% at k=28). Cost ~2-4h on 3-GPU for 10k steps.",
+      "trainable": ["adapter", "action_head", "proprio"],
+      "params": {"adapter_type": "mlp", "bottleneck": 1024},
+      "fixed": true,
+      "cost_estimate": "medium-high (~2-4h)"
+    }
+  ]
+}

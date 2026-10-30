@@ -1,0 +1,154 @@
+{
+  "identity": {
+    "suites": [
+      {
+        "suite": "libero_object",
+        "episodes": 454,
+        "samples": 63806,
+        "unique_stable_ids": 63806,
+        "shuffled_samples_checked": 1124,
+        "all_shuffled_ids_match": true,
+        "seconds": 3.03
+      },
+      {
+        "suite": "libero_spatial",
+        "episodes": 432,
+        "samples": 49946,
+        "unique_stable_ids": 49946,
+        "shuffled_samples_checked": 969,
+        "all_shuffled_ids_match": true,
+        "seconds": 2.03
+      },
+      {
+        "suite": "libero_goal",
+        "episodes": 428,
+        "samples": 49046,
+        "unique_stable_ids": 49046,
+        "shuffled_samples_checked": 995,
+        "all_shuffled_ids_match": true,
+        "seconds": 1.77
+      },
+      {
+        "suite": "libero_10",
+        "episodes": 379,
+        "samples": 98816,
+        "unique_stable_ids": 98816,
+        "shuffled_samples_checked": 1986,
+        "all_shuffled_ids_match": true,
+        "seconds": 2.76
+      }
+    ],
+    "total_samples": 261614,
+    "witnesses": {
+      "real_ids": 14,
+      "unique_v2_keys": 14,
+      "save_reload_reordered_padded_lookup_correct": true,
+      "targets": "diagnostic marker values, not generated teacher logits"
+    },
+    "gpu_used": false,
+    "teacher_outputs_regenerated": false,
+    "robot_sr_measured": false
+  },
+  "views": {
+    "actual_native_pipeline_samples": 2,
+    "rows": [
+      {
+        "stable_id_unchanged": true,
+        "tokens_unchanged": true,
+        "visual_augmentation_changes_pixels": true,
+        "batch_ids_preserved": true
+      },
+      {
+        "stable_id_unchanged": true,
+        "tokens_unchanged": true,
+        "visual_augmentation_changes_pixels": true,
+        "batch_ids_preserved": true
+      }
+    ],
+    "repeat": false,
+    "gpu_used": false
+  },
+  "real_teacher_gpu": {
+    "reports": [
+      {
+        "suite": "libero_object",
+        "samples": 9,
+        "cache_entries": 9,
+        "real_teacher_generated": true,
+        "batch_one_proprio_shape_correct": true,
+        "reordered_reload_exact": true,
+        "groups": [
+          {
+            "samples": 9,
+            "unique_real_teacher_outputs": 9,
+            "max_abs_logit_difference_from_first": 2.25
+          }
+        ],
+        "model_source_sha256": "b5431a074c0025a12e46dc954a5e18d1d73477babb5ae42e3a12ab4b907f33a6",
+        "seconds": 24.45
+      },
+      {
+        "suite": "libero_10",
+        "samples": 5,
+        "cache_entries": 5,
+        "real_teacher_generated": true,
+        "batch_one_proprio_shape_correct": true,
+        "reordered_reload_exact": true,
+        "groups": [
+          {
+            "samples": 3,
+            "unique_real_teacher_outputs": 3,
+            "max_abs_logit_difference_from_first": 1.75
+          },
+          {
+            "samples": 2,
+            "unique_real_teacher_outputs": 2,
+            "max_abs_logit_difference_from_first": 1.125
+          }
+        ],
+        "model_source_sha256": "b5431a074c0025a12e46dc954a5e18d1d73477babb5ae42e3a12ab4b907f33a6",
+        "seconds": 9.31
+      }
+    ],
+    "total_real_teacher_samples": 14,
+    "full_training_cache_generated": false,
+    "recovery_training_run": false,
+    "robot_success_rate_measured": false
+  },
+  "native_training_read": {
+    "native_phase2_samples": 2,
+    "rows": [
+      {
+        "step": 86,
+        "loss": 0.0020767636597156525,
+        "kl_loss": 0.00013889755064155906,
+        "finite_head_gradients": true
+      },
+      {
+        "step": 87,
+        "loss": 0.003149885917082429,
+        "kl_loss": 0.00014390457363333553,
+        "finite_head_gradients": true
+      }
+    ],
+    "cache_stats": {
+      "hit_rate": 1.0,
+      "hits": 2,
+      "misses": 0,
+      "total": 2
+    },
+    "optimizer_steps": 0,
+    "robot_rollouts": 0,
+    "student_structure": "unpruned dense control; matching path only"
+  },
+  "full_training_cache_regenerated": false,
+  "full_recovery_training_rerun": false,
+  "robot_success_rates_rerun": false,
+  "original_caches_and_weights_modified": false,
+  "validation_script_sha256": {
+    "check_real_ids.py": "4fb3778934421691573f0c202f59ad4e1b2fdc9e010fb197ee4cb7c11e4ef8a0",
+    "check_views.py": "b0c95e920e60d285c642bf3b045c81b2fd4fd2951df1bbfbd1a91a4f19ee21c2",
+    "check_gpu_canonical.py": "d63ca29344c8ecc0d18865d21a9b4fb2476ac4a21c8504ff0576ce04a9fa67a8",
+    "check_training_read.py": "85eab76730e30244e21520f3a68100672f4e2080ee951f9fafb5558e46a63ff6"
+  }
+}

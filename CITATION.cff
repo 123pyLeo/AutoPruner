@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the AutoPruner paper when using this work."
+title: "AutoPruner: Agentic Depth Pruning for Vision-Language-Action Models"
+type: software
+version: 0.1.0rc1
+authors:
+  - family-names: Lin
+    given-names: Tao
+  - family-names: Chen
+    given-names: Yikeng
+  - family-names: Liang
+    given-names: Qiwei
+  - family-names: Xie
+    given-names: Zinan
+  - family-names: Liang
+    given-names: Zhengtu
+  - family-names: Xu
+    given-names: Renjing
+url: "https://arxiv.org/abs/2610.23880"

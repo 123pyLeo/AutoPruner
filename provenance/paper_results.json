@@ -1,0 +1,307 @@
+{
+  "paper": "https://arxiv.org/pdf/2610.23880",
+  "rows": [
+    {
+      "model": "oft",
+      "suite": "object",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "paper_sr": 0.926,
+      "observed_successes": 463,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/oft_500ep/libero_object/gpu0/EVAL-libero_object-openvla-2026_07_04-02_31_22--oft500_libero_object_g0.txt",
+        "AutoPrune/local_runs/oft_500ep/libero_object/gpu1/EVAL-libero_object-openvla-2026_07_04-02_31_22--oft500_libero_object_g1.txt"
+      ],
+      "recovery": "teacher-guided",
+      "status": "raw evaluation counts verified; checkpoint hashes and exact historical optimizer config still needed"
+    },
+    {
+      "model": "oft",
+      "suite": "spatial",
+      "removed_layers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "paper_sr": 0.928,
+      "observed_successes": 464,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/oft_500ep/libero_spatial/gpu0/EVAL-libero_spatial-openvla-2026_07_04-01_02_20--oft500_libero_spatial_g0.txt",
+        "AutoPrune/local_runs/oft_500ep/libero_spatial/gpu1/EVAL-libero_spatial-openvla-2026_07_04-01_02_20--oft500_libero_spatial_g1.txt"
+      ],
+      "recovery": "teacher-guided",
+      "status": "raw evaluation counts verified; checkpoint hashes and exact historical optimizer config still needed"
+    },
+    {
+      "model": "oft",
+      "suite": "goal",
+      "removed_layers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "paper_sr": 0.942,
+      "observed_successes": 471,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/oft_500ep/libero_goal/gpu0/EVAL-libero_goal-openvla-2026_07_04-01_25_26--oft500_libero_goal_g0.txt",
+        "AutoPrune/local_runs/oft_500ep/libero_goal/gpu1/EVAL-libero_goal-openvla-2026_07_04-01_25_26--oft500_libero_goal_g1.txt"
+      ],
+      "recovery": "teacher-guided",
+      "status": "raw evaluation counts verified; checkpoint hashes and exact historical optimizer config still needed"
+    },
+    {
+      "model": "oft",
+      "suite": "long",
+      "removed_layers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "paper_sr": 0.912,
+      "observed_successes": 456,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/oft_500ep/libero_10_k8_2229/gpu0/EVAL-libero_10-openvla-2026_07_04-10_02_46--oft500_libero_10_k8_2229_g0.txt",
+        "AutoPrune/local_runs/oft_500ep/libero_10_k8_2229/gpu1/EVAL-libero_10-openvla-2026_07_04-10_02_46--oft500_libero_10_k8_2229_g1.txt"
+      ],
+      "recovery": "teacher-guided",
+      "status": "raw evaluation counts verified; checkpoint hashes and exact historical optimizer config still needed"
+    },
+    {
+      "model": "starvla",
+      "suite": "libero_goal",
+      "removed_layers": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        17,
+        21,
+        25,
+        27,
+        30
+      ],
+      "paper_sr": 0.92,
+      "observed_successes": 460,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/sv500/goal500_pruned/result.json"
+      ],
+      "recovery": "teacher-guided",
+      "status": "summary and per-task counts agree; exact checkpoint/training lineage still needs binding"
+    },
+    {
+      "model": "starvla",
+      "suite": "libero_spatial",
+      "removed_layers": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        17,
+        21,
+        25,
+        27,
+        30
+      ],
+      "paper_sr": 0.902,
+      "observed_successes": 451,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/sv500/spatial500_pruned/result.json"
+      ],
+      "recovery": "teacher-guided",
+      "status": "summary and per-task counts agree; exact checkpoint/training lineage still needs binding"
+    },
+    {
+      "model": "starvla",
+      "suite": "libero_object",
+      "removed_layers": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        17,
+        21,
+        25,
+        27,
+        30
+      ],
+      "paper_sr": 0.95,
+      "observed_successes": 475,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/sv500/object500_transfer/result.json"
+      ],
+      "recovery": "teacher-guided",
+      "status": "summary and per-task counts agree; exact checkpoint/training lineage still needs binding"
+    },
+    {
+      "model": "starvla",
+      "suite": "libero_10",
+      "removed_layers": [
+        2,
+        4,
+        7,
+        10,
+        13,
+        21,
+        22,
+        27
+      ],
+      "paper_sr": 0.938,
+      "observed_successes": 469,
+      "observed_episodes": 500,
+      "evidence": [
+        "AutoPrune/local_runs/long_r1_supp_20260909_retry2_k8A_r1_eval.log"
+      ],
+      "checkpoint": "starVLA-Robotwin2.0/results/Checkpoints/long_r1_supp_20260909_retry2_k8A_r1/final_model/pytorch_model.pt",
+      "checkpoint_exists": true,
+      "recovery": "demonstration-based, frozen sidecars and kept layers",
+      "status": "eval aggregate and saved training config verified; no independent reload/rollout in this audit"
+    },
+    {
+      "model": "fastwam",
+      "suite": "libero_object",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_sr": 0.998,
+      "observed_successes": 499,
+      "observed_episodes": 500,
+      "evidence": [
+        "FastWAM/evaluate_results/libero/libero_uncond_2cam224_1e-4/20260704_120201/summary.json"
+      ],
+      "checkpoint": "FastWAM/runs/recover_FIXED_k6/checkpoints/weights/step_000150.pt",
+      "checkpoint_exists": true,
+      "recovery": "demonstration-based full MoT, not current plugin action-only recipe",
+      "status": "summary counts verified; historical training scope needs exact saved run config"
+    },
+    {
+      "model": "fastwam",
+      "suite": "libero_spatial",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_sr": 0.944,
+      "observed_successes": 472,
+      "observed_episodes": 500,
+      "evidence": [
+        "FastWAM/evaluate_results/libero/libero_uncond_2cam224_1e-4/20260704_094128/summary.json"
+      ],
+      "checkpoint": "FastWAM/runs/recover_FIXED_k6/checkpoints/weights/step_000150.pt",
+      "checkpoint_exists": true,
+      "recovery": "demonstration-based full MoT, not current plugin action-only recipe",
+      "status": "summary counts verified; historical training scope needs exact saved run config"
+    },
+    {
+      "model": "fastwam",
+      "suite": "libero_10",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "paper_sr": 0.916,
+      "observed_successes": 458,
+      "observed_episodes": 500,
+      "evidence": [
+        "FastWAM/evaluate_results/libero/libero_uncond_2cam224_1e-4/20260825_053043/summary.json"
+      ],
+      "checkpoint": "external-artifacts/fw_runs_long/long_k5/checkpoints/weights/step_000150.pt",
+      "checkpoint_exists": false,
+      "recovery": "demonstration-based full MoT, not current plugin action-only recipe",
+      "status": "summary counts verified; Long checkpoint absent at recorded path"
+    },
+    {
+      "model": "fastwam",
+      "suite": "libero_goal",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_sr": 0.937,
+      "observed_runs": [
+        {
+          "successes": 461,
+          "episodes": 500
+        },
+        {
+          "successes": 476,
+          "episodes": 500
+        }
+      ],
+      "evidence": [
+        "FastWAM/evaluate_results/libero/libero_uncond_2cam224_1e-4/20260704_122619/summary.json",
+        "FastWAM/evaluate_results/libero/libero_uncond_2cam224_1e-4/20260721_221833/summary.json"
+      ],
+      "status": "93.7% is mean of 92.2% and 95.2%, or pooled 937/1000; not one 500-episode evaluation. Repeated-state independence unverified."
+    }
+  ],
+  "note": "Evidence mapping, not certification that each main-table row was selected by an autonomous agent run."
+}

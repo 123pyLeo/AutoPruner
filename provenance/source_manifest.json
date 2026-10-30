@@ -1,0 +1,710 @@
+{
+  "source_role": "Experimental implementation, not a historical commit assertion",
+  "files": [
+    {
+      "source": "AutoPrune/autoprune/__init__.py",
+      "destination": "autoprune/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "AutoPrune/autoprune/backends/__init__.py",
+      "destination": "autoprune/backends/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "AutoPrune/autoprune/backends/generic_backend.py",
+      "destination": "autoprune/backends/generic_backend.py",
+      "source_sha256": "fd474d986c38f4d6478f6fd1c8cf6a86c97e955bb874dfa04016d0afd8259a09",
+      "release_sha256": "88546793cbdabc4770f846b693a85e0f8d53b1c3817d729b3cde5ed36d746d73"
+    },
+    {
+      "source": "AutoPrune/autoprune/backends/oft_plugin.py",
+      "destination": "autoprune/backends/oft_plugin.py",
+      "source_sha256": "f1e9fa8aa1e1eb1849b173e319cd35f8dde7504a8dddaeddd5db9c70b795e3c2",
+      "release_sha256": "cfab4159d94084491df0b0a7790d9e486dd322ab6e807e47aa33b2dc12b7b323"
+    },
+    {
+      "source": "AutoPrune/autoprune/backends/plugin.py",
+      "destination": "autoprune/backends/plugin.py",
+      "source_sha256": "8f73932b24f25da20a34d8b92d9a25c862123a7129762aeca6559ae456c8d5c1",
+      "release_sha256": "4077947a285a2a4dcfce20274a33ea2050fb9f8f733880feabd841f4604778ce"
+    },
+    {
+      "source": "AutoPrune/autoprune/backends/pruning_mode.py",
+      "destination": "autoprune/backends/pruning_mode.py",
+      "source_sha256": "fb8715bc1939a507855383a0cb1409e4aef51442940456be87f0c68b0e8cd2b2",
+      "release_sha256": "fb8715bc1939a507855383a0cb1409e4aef51442940456be87f0c68b0e8cd2b2"
+    },
+    {
+      "source": "AutoPrune/autoprune/backends/recovery_ladder.py",
+      "destination": "autoprune/backends/recovery_ladder.py",
+      "source_sha256": "da23f61ee7f24c223cf4d346772d35987c7c27e4e87065e58f7ca0ad240c1f1d",
+      "release_sha256": "da23f61ee7f24c223cf4d346772d35987c7c27e4e87065e58f7ca0ad240c1f1d"
+    },
+    {
+      "source": "AutoPrune/autoprune/report.py",
+      "destination": "autoprune/report.py",
+      "source_sha256": "1c78922141978af449832c01213f44c1928f69cac66e6bbf494b3f57a8ba5695",
+      "release_sha256": "866af20287ede9fa29f9fc55a98cc789fb9246e3b62632c8f4443c165d6b6734"
+    },
+    {
+      "source": "AutoPrune/autoprune/run_e2e.py",
+      "destination": "autoprune/run_e2e.py",
+      "source_sha256": "57e2c49c943247f6e685cccd86dc763db8f763eb022cb2c580446245dc112eb2",
+      "release_sha256": "c654635d6016d5e5075a8f0df507efcd1d86bfc6a4a753f370cf61b01650bcee"
+    },
+    {
+      "source": "AutoPrune/autoprune/selection.py",
+      "destination": "autoprune/selection.py",
+      "source_sha256": "e2c225b7fc008fe4f5be7fcb5a7d9f7715a77a49c063b32d90f4323102e7a012",
+      "release_sha256": "884426e2f3144fe48b067607647880c267c2855d443bf3283f88000e91061f0f"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/__init__.py",
+      "destination": "agentic_pruning/__init__.py",
+      "source_sha256": "e783760938a47589ca44f99db17f536b07f5b95365136ef332e1028ec7f05e35",
+      "release_sha256": "e783760938a47589ca44f99db17f536b07f5b95365136ef332e1028ec7f05e35"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/__init__.py",
+      "destination": "agentic_pruning/agents/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/base.py",
+      "destination": "agentic_pruning/agents/base.py",
+      "source_sha256": "4ee8e99c7a1779a128377b799158d2f4229ec2cce869452f68189672c1459354",
+      "release_sha256": "2593c67c63938c50226fa45961d60c898d8b0eedead38bfb86def3803265f747"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/claude_agent.py",
+      "destination": "agentic_pruning/agents/claude_agent.py",
+      "source_sha256": "af2a4b5411fbdb08f324e0f670e7811f66650f12f25c0eefc0ad188c6fc31c79",
+      "release_sha256": "4c2bc4d282e4c59ade02d9917f8267733dd110a00294e08537140a1a170b61af"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/escalation_rule_agent.py",
+      "destination": "agentic_pruning/agents/escalation_rule_agent.py",
+      "source_sha256": "2f6c4f83a3a936eeb4384dc2c229c7129a7242266f4c8d95691c1a6069fb6fd9",
+      "release_sha256": "2f6c4f83a3a936eeb4384dc2c229c7129a7242266f4c8d95691c1a6069fb6fd9"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/fim_agent.py",
+      "destination": "agentic_pruning/agents/fim_agent.py",
+      "source_sha256": "ba5f0f79bc1a700f8c68a895c3576690745582fdfd5b43007823772423890a76",
+      "release_sha256": "ba5f0f79bc1a700f8c68a895c3576690745582fdfd5b43007823772423890a76"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/gpt_agent.py",
+      "destination": "agentic_pruning/agents/gpt_agent.py",
+      "source_sha256": "60991cb45b701fa7d19db4a33097e390fad4c9c117ae971d5ea33e1944ff080d",
+      "release_sha256": "e1045654802e3025fe01dd5346adc04e659cec3ea27c1aab4593f9ba9af0e13d"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/qwen_agent.py",
+      "destination": "agentic_pruning/agents/qwen_agent.py",
+      "source_sha256": "65053680558df38145092e45ca723939381a55361a376fdbb63796b96154c1d6",
+      "release_sha256": "a7fac3c4a6e12b2954686b46087fcd631ab7bc6561e0f0069c21330d0e386026"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/agents/rule_agent.py",
+      "destination": "agentic_pruning/agents/rule_agent.py",
+      "source_sha256": "69cf5ed078ae038b568e38e69e6f80a0903a279c1f98d9da8b088953b183f601",
+      "release_sha256": "13afb06f24bcee404bd8c32a86c99704bad562c592a32b148544bc5d6048f6ba"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/driver.py",
+      "destination": "agentic_pruning/driver.py",
+      "source_sha256": "a2cdbae2a19e269ca7f05bd300263368cee391d4082173ba1a1574a70149747a",
+      "release_sha256": "2fdbc29fb2af46ae4cf74a9086faf9653d54020189410087a2d3b1bdf05c71de"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/e2e/__init__.py",
+      "destination": "agentic_pruning/e2e/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/e2e/prompt_parser.py",
+      "destination": "agentic_pruning/e2e/prompt_parser.py",
+      "source_sha256": "541589b4496ba9a19a66bef061407b9b12da4c70fa6fb0cc09207e591a133ab4",
+      "release_sha256": "93770a0685bcb9b80726cf32c312de92efc130a39275c15b9174ede73183d5b1"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/integration/__init__.py",
+      "destination": "agentic_pruning/integration/__init__.py",
+      "source_sha256": "8c304102708075689e775753aa91422368eb1e8196c7b0676bd58d297a83666d",
+      "release_sha256": "8c304102708075689e775753aa91422368eb1e8196c7b0676bd58d297a83666d"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/integration/lib_engine.py",
+      "destination": "agentic_pruning/integration/lib_engine.py",
+      "source_sha256": "3472a9c49854de99c8cae80fe99c58d6769696ff30fb819b65d001ec9b8a74f5",
+      "release_sha256": "311b9fb6832aa99fc06653f3a4bacbc9a251c59de5e592910fb409aebeef5e8d"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/integration/lib_modules.py",
+      "destination": "agentic_pruning/integration/lib_modules.py",
+      "source_sha256": "e6d6be41f2352d8e8567969807872cdbdc18ec83ef374758178c335c27a71cc8",
+      "release_sha256": "378227449081e233857b035bfadd517bee88de9903c83896f06fd5b0daad1b7c"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/__init__.py",
+      "destination": "agentic_pruning/modules/__init__.py",
+      "source_sha256": "4f902ba81e980f0d356d84b649ea570297f5ff623ad1c0069333b405458cab92",
+      "release_sha256": "4f902ba81e980f0d356d84b649ea570297f5ff623ad1c0069333b405458cab92"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/diagnosis.py",
+      "destination": "agentic_pruning/modules/diagnosis.py",
+      "source_sha256": "93e4ad8459bb3d9c6dc83d07ef443ebde891ae0f27edc2994d6b344506d7ef33",
+      "release_sha256": "93e4ad8459bb3d9c6dc83d07ef443ebde891ae0f27edc2994d6b344506d7ef33"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/eval.py",
+      "destination": "agentic_pruning/modules/eval.py",
+      "source_sha256": "ce65ce683080ebd660a4b3db5773865ddf4e48b4c8873793ba9025442e60e0d4",
+      "release_sha256": "ce65ce683080ebd660a4b3db5773865ddf4e48b4c8873793ba9025442e60e0d4"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/gate.py",
+      "destination": "agentic_pruning/modules/gate.py",
+      "source_sha256": "2a1c3302dba726fefc4bcec017c730953203fa4c3df601ed5c2c016eff53d0eb",
+      "release_sha256": "2a1c3302dba726fefc4bcec017c730953203fa4c3df601ed5c2c016eff53d0eb"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/grid.py",
+      "destination": "agentic_pruning/modules/grid.py",
+      "source_sha256": "2160dede470185e750373353e9176df968b8227f8d307b5e7662abd45721abce",
+      "release_sha256": "2160dede470185e750373353e9176df968b8227f8d307b5e7662abd45721abce"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/mask_search.py",
+      "destination": "agentic_pruning/modules/mask_search.py",
+      "source_sha256": "137b0a1a6af98e50eda3388baaaf3fad21ef3c1b30fa41fa867837f306a0d3c5",
+      "release_sha256": "bfafd788708adf52524adf482b35725afb19f71880e647c602f03e5dfdddeba2"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/probe.py",
+      "destination": "agentic_pruning/modules/probe.py",
+      "source_sha256": "28a5705a7b6c0cf031a428993a66f19c830155c22c9045de372d9acf89e55a42",
+      "release_sha256": "28a5705a7b6c0cf031a428993a66f19c830155c22c9045de372d9acf89e55a42"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/probe_query.py",
+      "destination": "agentic_pruning/modules/probe_query.py",
+      "source_sha256": "f8a5a6005be4d6f023bd0b5364fcd7101839224b7450c43238da601248bd9bbe",
+      "release_sha256": "f8a5a6005be4d6f023bd0b5364fcd7101839224b7450c43238da601248bd9bbe"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/recovery.py",
+      "destination": "agentic_pruning/modules/recovery.py",
+      "source_sha256": "a9406f131c9d006df9b56a09d15a8d00f74ac85b65f2e6ddb588e002da928395",
+      "release_sha256": "a9406f131c9d006df9b56a09d15a8d00f74ac85b65f2e6ddb588e002da928395"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/modules/rule_store.py",
+      "destination": "agentic_pruning/modules/rule_store.py",
+      "source_sha256": "73aa5f9a3ceda49c1be69118fcf1c0ae5a3b791a9f257a4f4f9d6442efbbb414",
+      "release_sha256": "73aa5f9a3ceda49c1be69118fcf1c0ae5a3b791a9f257a4f4f9d6442efbbb414"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/__init__.py",
+      "destination": "mask_probe_lib/__init__.py",
+      "source_sha256": "1d358d2c4eab8cd4a90c0838a9802748f3ae96941a8d0481574822643c4ea8c1",
+      "release_sha256": "1d358d2c4eab8cd4a90c0838a9802748f3ae96941a8d0481574822643c4ea8c1"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/backends/__init__.py",
+      "destination": "mask_probe_lib/backends/__init__.py",
+      "source_sha256": "eb66034e65fd3ff1b5e59eeb393f3400f34ede54076c1f3a0b9ed7a9d51104bc",
+      "release_sha256": "8d6f6dd800a4ed817371cebccb66e157a2ae4462be0c1d5b7ce6d5cc46132dc0"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/backends/mock.py",
+      "destination": "mask_probe_lib/backends/mock.py",
+      "source_sha256": "10fd03de3aa8f13387e6b792ad1111669998af3c8614932f8e8c9381d1a215c2",
+      "release_sha256": "10fd03de3aa8f13387e6b792ad1111669998af3c8614932f8e8c9381d1a215c2"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/core/__init__.py",
+      "destination": "mask_probe_lib/core/__init__.py",
+      "source_sha256": "6facfb1ff1528ecc7ccca38a82aea34f36dda2bdabd6de7eb719e301ab4b4ed7",
+      "release_sha256": "6facfb1ff1528ecc7ccca38a82aea34f36dda2bdabd6de7eb719e301ab4b4ed7"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/core/backend.py",
+      "destination": "mask_probe_lib/core/backend.py",
+      "source_sha256": "d018a9e41cf1a751dd3b15f5701d6992f44f6df414b836816237296202446976",
+      "release_sha256": "d018a9e41cf1a751dd3b15f5701d6992f44f6df414b836816237296202446976"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/core/kernels.py",
+      "destination": "mask_probe_lib/core/kernels.py",
+      "source_sha256": "f80bad91e5150d05db868953e956aea74fa834e1ce3c8a88a0650582326c2db9",
+      "release_sha256": "98eb6ab47c14c04296a0b1a7b52c41d35179bcd10c9e6ca6dd35e12a0dea7355"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/core/registry.py",
+      "destination": "mask_probe_lib/core/registry.py",
+      "source_sha256": "2445f594d8c7a49bc477d4aa887f530938e54fbd141422c29e839bf1095d43e0",
+      "release_sha256": "2445f594d8c7a49bc477d4aa887f530938e54fbd141422c29e839bf1095d43e0"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/core/types.py",
+      "destination": "mask_probe_lib/core/types.py",
+      "source_sha256": "475089e49a676f3ccec4eb4be566b46745dfe73eb2320c379c1b471a31de667a",
+      "release_sha256": "475089e49a676f3ccec4eb4be566b46745dfe73eb2320c379c1b471a31de667a"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/layer_importance/__init__.py",
+      "destination": "mask_probe_lib/layer_importance/__init__.py",
+      "source_sha256": "b2047d721157c59104814b3effb677ad3fe089ff0ea8d98b2cbdf20ee124841f",
+      "release_sha256": "b2047d721157c59104814b3effb677ad3fe089ff0ea8d98b2cbdf20ee124841f"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/layer_importance/base.py",
+      "destination": "mask_probe_lib/layer_importance/base.py",
+      "source_sha256": "e3d5be84c37082511e23f04df60fa265e0c1c72a794a1426ae1e7276d5aca285",
+      "release_sha256": "e3d5be84c37082511e23f04df60fa265e0c1c72a794a1426ae1e7276d5aca285"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/layer_importance/knockout.py",
+      "destination": "mask_probe_lib/layer_importance/knockout.py",
+      "source_sha256": "207130177797cd37e47886cb9ba4160ed9f940fe43342455464369b52d7cae2a",
+      "release_sha256": "2d3038cd7d316d1b48a56300f4a992bf5f30a75a76b5abb3f24dab5efbef3f1b"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/layer_importance/linear_action.py",
+      "destination": "mask_probe_lib/layer_importance/linear_action.py",
+      "source_sha256": "a630acb550e599a48b9f2ff3e51c5e56d7f82440c7c9fd1b199d746173cfbd0e",
+      "release_sha256": "a630acb550e599a48b9f2ff3e51c5e56d7f82440c7c9fd1b199d746173cfbd0e"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/layer_importance/manifold.py",
+      "destination": "mask_probe_lib/layer_importance/manifold.py",
+      "source_sha256": "12f5d1b391cfc6ad25d32e172b816211fc19b07f6d8087c2c138be80b3faae23",
+      "release_sha256": "12f5d1b391cfc6ad25d32e172b816211fc19b07f6d8087c2c138be80b3faae23"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/layer_importance/planning.py",
+      "destination": "mask_probe_lib/layer_importance/planning.py",
+      "source_sha256": "d29ca237a81e001d4a6a6c92e53cdf350317ca3fc43f4b4f1a647b4f7d146b7d",
+      "release_sha256": "d29ca237a81e001d4a6a6c92e53cdf350317ca3fc43f4b4f1a647b4f7d146b7d"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/layer_importance/windowed_knockout.py",
+      "destination": "mask_probe_lib/layer_importance/windowed_knockout.py",
+      "source_sha256": "258f147fb2b72e694dd6267175593f6dd93834a48ccb7ab8cb85c9a405074645",
+      "release_sha256": "258f147fb2b72e694dd6267175593f6dd93834a48ccb7ab8cb85c9a405074645"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_recoverability/__init__.py",
+      "destination": "mask_probe_lib/mask_recoverability/__init__.py",
+      "source_sha256": "300b75be12a803adf8d332bd16ee4a3ef36dd031652a6782cb6a23621f128394",
+      "release_sha256": "300b75be12a803adf8d332bd16ee4a3ef36dd031652a6782cb6a23621f128394"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_recoverability/base.py",
+      "destination": "mask_probe_lib/mask_recoverability/base.py",
+      "source_sha256": "7b4bcd64a9c978fc5d2fee3bd58cdd971f78abea6ae4d348e38348ca6d5b4321",
+      "release_sha256": "7b4bcd64a9c978fc5d2fee3bd58cdd971f78abea6ae4d348e38348ca6d5b4321"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_recoverability/boundary_lowrank.py",
+      "destination": "mask_probe_lib/mask_recoverability/boundary_lowrank.py",
+      "source_sha256": "2688421a37a5a7b7c2f5204ba1981961f827ff33ce97bc5972e6e267f3e37f45",
+      "release_sha256": "2688421a37a5a7b7c2f5204ba1981961f827ff33ce97bc5972e6e267f3e37f45"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_recoverability/multi_anchor.py",
+      "destination": "mask_probe_lib/mask_recoverability/multi_anchor.py",
+      "source_sha256": "93707cfb2465422882c4406be438385c4668dd2985bf624559daf90004c302b2",
+      "release_sha256": "93707cfb2465422882c4406be438385c4668dd2985bf624559daf90004c302b2"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_recoverability/planning_gap.py",
+      "destination": "mask_probe_lib/mask_recoverability/planning_gap.py",
+      "source_sha256": "9ff1849f03c152785d20f45eee6ed2cbc5e9c586922009b369044b3b3e2d8dda",
+      "release_sha256": "9ff1849f03c152785d20f45eee6ed2cbc5e9c586922009b369044b3b3e2d8dda"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_selection/__init__.py",
+      "destination": "mask_probe_lib/mask_selection/__init__.py",
+      "source_sha256": "84fe27d32abd6a8078799d5d79718dfa416845de1ee59fe005491641c6ddf5d4",
+      "release_sha256": "84fe27d32abd6a8078799d5d79718dfa416845de1ee59fe005491641c6ddf5d4"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_selection/anchor_policy.py",
+      "destination": "mask_probe_lib/mask_selection/anchor_policy.py",
+      "source_sha256": "2b377cc0a8e325552daf30c810d2b0190079e50e71844a18fcf752b6e9e9d55c",
+      "release_sha256": "2b377cc0a8e325552daf30c810d2b0190079e50e71844a18fcf752b6e9e9d55c"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_selection/qd_archive.py",
+      "destination": "mask_probe_lib/mask_selection/qd_archive.py",
+      "source_sha256": "4261202345e70ecaf30c05a9e08b54776c95644668ffb6a1dc53984557ec36cf",
+      "release_sha256": "4261202345e70ecaf30c05a9e08b54776c95644668ffb6a1dc53984557ec36cf"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/mask_selection/ratio.py",
+      "destination": "mask_probe_lib/mask_selection/ratio.py",
+      "source_sha256": "c45d3e3a410258d75352b0037fdd8bf54b24d99266ab6020252c1c895d168693",
+      "release_sha256": "c45d3e3a410258d75352b0037fdd8bf54b24d99266ab6020252c1c895d168693"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/negative_baselines.py",
+      "destination": "mask_probe_lib/negative_baselines.py",
+      "source_sha256": "0afbcbbcd418f82525d791055215f67ea86e2edf29e0c01eff2eeb125cec397e",
+      "release_sha256": "0afbcbbcd418f82525d791055215f67ea86e2edf29e0c01eff2eeb125cec397e"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/pipeline.py",
+      "destination": "mask_probe_lib/pipeline.py",
+      "source_sha256": "2f132064f2699e369926c79fff76c3777a80534c6d1e278a71a3dd38f87f3b1d",
+      "release_sha256": "2f132064f2699e369926c79fff76c3777a80534c6d1e278a71a3dd38f87f3b1d"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/sr_surrogate/__init__.py",
+      "destination": "mask_probe_lib/sr_surrogate/__init__.py",
+      "source_sha256": "8901b53e473695235e5c43824de4c74c3494837ed73d16fe6d4efa918c09755c",
+      "release_sha256": "8901b53e473695235e5c43824de4c74c3494837ed73d16fe6d4efa918c09755c"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/sr_surrogate/base.py",
+      "destination": "mask_probe_lib/sr_surrogate/base.py",
+      "source_sha256": "600bab1fc3a09ad79327b18fca683e22906e011dfd6f362158d409431d46626c",
+      "release_sha256": "600bab1fc3a09ad79327b18fca683e22906e011dfd6f362158d409431d46626c"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/sr_surrogate/drift_predictor.py",
+      "destination": "mask_probe_lib/sr_surrogate/drift_predictor.py",
+      "source_sha256": "6812f00c79c95a511ad6ff07da9dabf18bf86acab6aee88d71574372414e5765",
+      "release_sha256": "6812f00c79c95a511ad6ff07da9dabf18bf86acab6aee88d71574372414e5765"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/validation/__init__.py",
+      "destination": "mask_probe_lib/validation/__init__.py",
+      "source_sha256": "8c24e5b938df389db83ab062659955ba7ce182871ea5eb77c87cb4e181bd762d",
+      "release_sha256": "8c24e5b938df389db83ab062659955ba7ce182871ea5eb77c87cb4e181bd762d"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/validation/anti_anchor.py",
+      "destination": "mask_probe_lib/validation/anti_anchor.py",
+      "source_sha256": "0b1cccfc3d360014d3eca36286128f9551249a4e9d1d1f86b01ea73e1f59a01d",
+      "release_sha256": "0b1cccfc3d360014d3eca36286128f9551249a4e9d1d1f86b01ea73e1f59a01d"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/validation/correlation.py",
+      "destination": "mask_probe_lib/validation/correlation.py",
+      "source_sha256": "bb8685815edf31bb33679a7bddbaba58a52862069e5f41358fa6f311ce6f8e35",
+      "release_sha256": "bb8685815edf31bb33679a7bddbaba58a52862069e5f41358fa6f311ce6f8e35"
+    },
+    {
+      "source": "AutoPrune/mask_probe_lib/validation/recoverability_funnel.py",
+      "destination": "mask_probe_lib/validation/recoverability_funnel.py",
+      "source_sha256": "96eb488586626b5aeb5458816154e73a49a021af5a0bf43416656b1eea9f4c21",
+      "release_sha256": "96eb488586626b5aeb5458816154e73a49a021af5a0bf43416656b1eea9f4c21"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/__init__.py",
+      "destination": "recovery_lib/__init__.py",
+      "source_sha256": "cbd5d210b58db42c7d90c4f6eae5a3481e32b34be1a4d170ca0cdd8fb18c4e6d",
+      "release_sha256": "2f04780144bbf98ffcd1a0a8b892f2348335fcc9980367bd215bc7fde7c3efeb"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/adapters/__init__.py",
+      "destination": "recovery_lib/adapters/__init__.py",
+      "source_sha256": "ec0fa7d68262f36bd21fc357ae437538d9ff1518c959e8e64f8f0a3bd0c18623",
+      "release_sha256": "ec0fa7d68262f36bd21fc357ae437538d9ff1518c959e8e64f8f0a3bd0c18623"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/adapters/boundary_adapter.py",
+      "destination": "recovery_lib/adapters/boundary_adapter.py",
+      "source_sha256": "c9b425827972544ff883acceef15d08f55bdacdd4ecf17623941f07cdb0339b1",
+      "release_sha256": "c9b425827972544ff883acceef15d08f55bdacdd4ecf17623941f07cdb0339b1"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/backends/__init__.py",
+      "destination": "recovery_lib/backends/__init__.py",
+      "source_sha256": "14b64e1e00a47061b997502e1e20cf1439007c850588309a8159ecb1b6270149",
+      "release_sha256": "5f88965fa907c9f7089db1cb2f79bd3cbf6ca3a7f32352f909057d701935d4dd"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/backends/mock.py",
+      "destination": "recovery_lib/backends/mock.py",
+      "source_sha256": "e917e7bd4c1904809203d0ede8d89a53b0ab39a5133ecd2fe7b154c2160608d7",
+      "release_sha256": "e917e7bd4c1904809203d0ede8d89a53b0ab39a5133ecd2fe7b154c2160608d7"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/core/__init__.py",
+      "destination": "recovery_lib/core/__init__.py",
+      "source_sha256": "3b6043dd9e2cddf6673dba1039f7545078bfbc69e5b1d5ea87c0763fdac78bf4",
+      "release_sha256": "3b6043dd9e2cddf6673dba1039f7545078bfbc69e5b1d5ea87c0763fdac78bf4"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/core/backend.py",
+      "destination": "recovery_lib/core/backend.py",
+      "source_sha256": "17362b9bbcf6e1c84564706fbbe6c09dd20146be67da5dbe32a458e5d28c5b21",
+      "release_sha256": "17362b9bbcf6e1c84564706fbbe6c09dd20146be67da5dbe32a458e5d28c5b21"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/core/losses.py",
+      "destination": "recovery_lib/core/losses.py",
+      "source_sha256": "5664de6bd6fdd32d00d34b72c09b83ba27f2d45623b2daddcf0317463d4d241d",
+      "release_sha256": "5664de6bd6fdd32d00d34b72c09b83ba27f2d45623b2daddcf0317463d4d241d"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/core/registry.py",
+      "destination": "recovery_lib/core/registry.py",
+      "source_sha256": "1ad283c3f325db0aea81ec8162d155d74be5376fcfc58c33b407d82af26849b7",
+      "release_sha256": "1ad283c3f325db0aea81ec8162d155d74be5376fcfc58c33b407d82af26849b7"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/core/types.py",
+      "destination": "recovery_lib/core/types.py",
+      "source_sha256": "e3a4c863dc56cd65c8d5c73f891ef9c6a7c3d7815d22e25b1d1a177f451282e5",
+      "release_sha256": "e3a4c863dc56cd65c8d5c73f891ef9c6a7c3d7815d22e25b1d1a177f451282e5"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/data/__init__.py",
+      "destination": "recovery_lib/data/__init__.py",
+      "source_sha256": "a311fc04361545efb6b63412dd6d5a9adc3ee39d9fa1b15f0d5d7fb1aa71fa15",
+      "release_sha256": "a311fc04361545efb6b63412dd6d5a9adc3ee39d9fa1b15f0d5d7fb1aa71fa15"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/data/offline_demos.py",
+      "destination": "recovery_lib/data/offline_demos.py",
+      "source_sha256": "6aeae237bef567c0c08da5bfd54ae41cca0a79c4b30ea232549c32aa64b7c510",
+      "release_sha256": "6aeae237bef567c0c08da5bfd54ae41cca0a79c4b30ea232549c32aa64b7c510"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/data/onpolicy_rollouts.py",
+      "destination": "recovery_lib/data/onpolicy_rollouts.py",
+      "source_sha256": "dbb6cd41e5fbf2a24b4950738dcd816dfbdff5f78071961ee535a3c8be986767",
+      "release_sha256": "dbb6cd41e5fbf2a24b4950738dcd816dfbdff5f78071961ee535a3c8be986767"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/data/teacher_cache.py",
+      "destination": "recovery_lib/data/teacher_cache.py",
+      "source_sha256": "593dc11b81e235ce44ef0da5d8f49a72614ae4def4ccdac2f961a0bb928ca17b",
+      "release_sha256": "593dc11b81e235ce44ef0da5d8f49a72614ae4def4ccdac2f961a0bb928ca17b"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/deploy/__init__.py",
+      "destination": "recovery_lib/deploy/__init__.py",
+      "source_sha256": "2c280d2ea24a3b2463d6a2ffd96004f518144dc7aa32b739717b44557441892e",
+      "release_sha256": "2c280d2ea24a3b2463d6a2ffd96004f518144dc7aa32b739717b44557441892e"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/deploy/routing.py",
+      "destination": "recovery_lib/deploy/routing.py",
+      "source_sha256": "de52ad0936984836b697be0353b8bca2f3b29939cbd25d54701c9bad65a87a52",
+      "release_sha256": "de52ad0936984836b697be0353b8bca2f3b29939cbd25d54701c9bad65a87a52"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/negative_baselines.py",
+      "destination": "recovery_lib/negative_baselines.py",
+      "source_sha256": "7d33d62ecb07ffe17a9b18257160577682682d232a08c45d609b0e2001f343e2",
+      "release_sha256": "7d33d62ecb07ffe17a9b18257160577682682d232a08c45d609b0e2001f343e2"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/objectives/__init__.py",
+      "destination": "recovery_lib/objectives/__init__.py",
+      "source_sha256": "e94100a389fba3bf9b2be03527e7f5498c82311916373401aa47fbffa7b712ed",
+      "release_sha256": "e94100a389fba3bf9b2be03527e7f5498c82311916373401aa47fbffa7b712ed"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/objectives/base.py",
+      "destination": "recovery_lib/objectives/base.py",
+      "source_sha256": "4aba1ee1fe876104c77d08bdf29130c6c17c53e7d0d6384f64c3841a974625c1",
+      "release_sha256": "4aba1ee1fe876104c77d08bdf29130c6c17c53e7d0d6384f64c3841a974625c1"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/objectives/distill_bc.py",
+      "destination": "recovery_lib/objectives/distill_bc.py",
+      "source_sha256": "53f17183c0ac531841dc3003f21fc4d3b80636d919db04dea5833ebb0ef177ef",
+      "release_sha256": "53f17183c0ac531841dc3003f21fc4d3b80636d919db04dea5833ebb0ef177ef"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/objectives/trust_region.py",
+      "destination": "recovery_lib/objectives/trust_region.py",
+      "source_sha256": "7ce47b603570cadc2e1e65ef54e002811dada8cb54dc94f2058f99c120717789",
+      "release_sha256": "7ce47b603570cadc2e1e65ef54e002811dada8cb54dc94f2058f99c120717789"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/pipeline.py",
+      "destination": "recovery_lib/pipeline.py",
+      "source_sha256": "c26484cfef7f796b001b17ece307383b14aad0c00549884eff46dbaaede29c26",
+      "release_sha256": "c26484cfef7f796b001b17ece307383b14aad0c00549884eff46dbaaede29c26"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/strategies/__init__.py",
+      "destination": "recovery_lib/strategies/__init__.py",
+      "source_sha256": "44deb3e56eaf2e384e3a8a2e5da8de4af1863001fd8519729fdef2cff3e9743c",
+      "release_sha256": "44deb3e56eaf2e384e3a8a2e5da8de4af1863001fd8519729fdef2cff3e9743c"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/strategies/base.py",
+      "destination": "recovery_lib/strategies/base.py",
+      "source_sha256": "7e2f9af4c3042f624143f143965b56cb768f1d0ec03b399265b34f6b5c1abfab",
+      "release_sha256": "7e2f9af4c3042f624143f143965b56cb768f1d0ec03b399265b34f6b5c1abfab"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/strategies/onpolicy_distill.py",
+      "destination": "recovery_lib/strategies/onpolicy_distill.py",
+      "source_sha256": "ead282af4770a2b108896287fc26cb30aee51ac0ccf43342929259aceac41c90",
+      "release_sha256": "ead282af4770a2b108896287fc26cb30aee51ac0ccf43342929259aceac41c90"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/strategies/per_task_specialist.py",
+      "destination": "recovery_lib/strategies/per_task_specialist.py",
+      "source_sha256": "60fdc211278398731ed769dbdba62dd413182a021d7c7c6555ec7e8888a9c0c8",
+      "release_sha256": "60fdc211278398731ed769dbdba62dd413182a021d7c7c6555ec7e8888a9c0c8"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/strategies/phase2_joint.py",
+      "destination": "recovery_lib/strategies/phase2_joint.py",
+      "source_sha256": "3d29b9b3e41a449c74537cd3ab5dee390ace3bc81a2c742e3d09accea3161ce4",
+      "release_sha256": "3d29b9b3e41a449c74537cd3ab5dee390ace3bc81a2c742e3d09accea3161ce4"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/validation/__init__.py",
+      "destination": "recovery_lib/validation/__init__.py",
+      "source_sha256": "0f0b519e1dcce86849784e9cd603c59f3b46b735ce10e4deaf2a9c2c86518331",
+      "release_sha256": "0f0b519e1dcce86849784e9cd603c59f3b46b735ce10e4deaf2a9c2c86518331"
+    },
+    {
+      "source": "AutoPrune/recovery_lib/validation/recovery_funnel.py",
+      "destination": "recovery_lib/validation/recovery_funnel.py",
+      "source_sha256": "62221d05847045ab40b62736411d2c9fe60888cb50cffa9df1d78b655427822c",
+      "release_sha256": "62221d05847045ab40b62736411d2c9fe60888cb50cffa9df1d78b655427822c"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/data/diagnosis_taxonomy.json",
+      "destination": "agentic_pruning/data/diagnosis_taxonomy.json",
+      "source_sha256": "fd1ea4319efa72b67ac65fb4cd357006395f236706c1b83764d310faad181600",
+      "release_sha256": "fd1ea4319efa72b67ac65fb4cd357006395f236706c1b83764d310faad181600"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/data/probe_methodology.json",
+      "destination": "agentic_pruning/data/probe_methodology.json",
+      "source_sha256": "b4134cc605df2eb425272a9fbcf728c0c2ca988a6279b149815bd8fffbc16700",
+      "release_sha256": "43be4b064582fc284c3b6c5a897650d451ee1afda11fdb100d9be6fa136a7566"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/data/recovery_recipes.json",
+      "destination": "agentic_pruning/data/recovery_recipes.json",
+      "source_sha256": "b37c4533582e5a054e3b72774a92362ccb68dfac5e3b39b8b8a80d20a391221e",
+      "release_sha256": "b37c4533582e5a054e3b72774a92362ccb68dfac5e3b39b8b8a80d20a391221e"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/framework/VLM4A/OpenVLAOFT.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/framework/VLM4A/OpenVLAOFT.py",
+      "source_sha256": "5e93b5fec49ba738601cd72a983c748fed6d77d16f4ad02401b8be783c639d0c",
+      "release_sha256": "0c84a8a030d21470640c2d1bd0a78e81a1d1b39565172c5c4321c4ab739173a0"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/framework/base_framework.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/framework/base_framework.py",
+      "source_sha256": "ae78f76dda78950b377e8975fee5e009639089fcba4455f281fa3dcdd34ba3b2",
+      "release_sha256": "d6cd5a7e2335fa35e3f3cc788b2768215ff3c6f804bcb93cc49b57859df4e370"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/framework/share_tools.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/framework/share_tools.py",
+      "source_sha256": "fd1cb47006539a92ea90e7f06b156bdc28a6ef3661c451c02a9b32ac400b4395",
+      "release_sha256": "70dcd540188a202f5fd51e9efdcb4075c31f4178d37169c7280234b70a39dc8a"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/tools.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/tools.py",
+      "source_sha256": "ddb7cf5a0a4d56aebfe2eb7ab3e1770f1c6f7d331d2dd1cf37a84220da02b55a",
+      "release_sha256": "09d7a467d9d1d8a74983e52b226d27f386825b25dc060ff13c60b2f6c65c9071"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/modules/vlm/OpenVLA.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/modules/vlm/OpenVLA.py",
+      "source_sha256": "0610da7ee45b1f79d8284b1cca8858152604e56a619122219328f1e4ee3ab0bb",
+      "release_sha256": "b713054b6698ace83395a7874fb7a86ffdcd2bbaae5c58570accefc1ef23262d"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/modules/openvla_utils.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/modules/openvla_utils.py",
+      "source_sha256": "65b4f58ba800b41d972a078250825ba3cc2f5150b90a9314056be8ae808d9396",
+      "release_sha256": "65b4f58ba800b41d972a078250825ba3cc2f5150b90a9314056be8ae808d9396"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/modules/action_model/OpenVLA_ActionHead.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/modules/action_model/OpenVLA_ActionHead.py",
+      "source_sha256": "59e0c1526db8c7254cab3eec768807fcdfe36b74135651a5ee46da22ffd2d2ab",
+      "release_sha256": "814e082a3389ae82b8a75ea283238c03792277adf7f03689e0aa5e85eddb2c0e"
+    },
+    {
+      "source": "AutoPrune/starVLA/model/modules/projector/OpenVLA_Projector.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/model/modules/projector/OpenVLA_Projector.py",
+      "source_sha256": "04152b267a52fc825e4dc549f3473fad23293aa8850f51d5b324350613186fe4",
+      "release_sha256": "00c6a08af285d1105c140778b0263e62303a20200c1ea571a50a9eebe5b94e8a"
+    },
+    {
+      "source": "AutoPrune/starVLA/training/trainer_utils/overwatch.py",
+      "destination": "autoprune/_vendor/oft_probe/starVLA/training/trainer_utils/overwatch.py",
+      "source_sha256": "26490d610d638c975b1f60ade0d94125d09f86e1773ce8ad0fb65d81e6bf057f",
+      "release_sha256": "26490d610d638c975b1f60ade0d94125d09f86e1773ce8ad0fb65d81e6bf057f"
+    },
+    {
+      "source": "AutoPrune/deployment/model_server/tools/image_tools.py",
+      "destination": "autoprune/_vendor/oft_probe/deployment/model_server/tools/image_tools.py",
+      "source_sha256": "ea839b396072667eb0a1c723bfcc93e1e25886e4dd2d49c84302cc1ef262c186",
+      "release_sha256": "ea839b396072667eb0a1c723bfcc93e1e25886e4dd2d49c84302cc1ef262c186"
+    },
+    {
+      "source": "AutoPrune/tests/test_selection_total_layers.py",
+      "destination": "tests/test_selection_total_layers.py",
+      "source_sha256": "e4a39e3f6299af40d19ccc20bc93486fab70e7642863679bf3a995965ddb05b3",
+      "release_sha256": "e4a39e3f6299af40d19ccc20bc93486fab70e7642863679bf3a995965ddb05b3"
+    },
+    {
+      "source": "AutoPrune/tests/test_recovery_ladder.py",
+      "destination": "tests/test_recovery_ladder.py",
+      "source_sha256": "84a11bd7d00a04be4759aa4069a51c34301126c36b7c47ddff2471e87b09a962",
+      "release_sha256": "993d5407a1279aac677526ba6168dd4412144bc7bd2c86f3ba6cc78fa337d22d"
+    },
+    {
+      "source": "AutoPrune/tests/test_final_diagnosis_review.py",
+      "destination": "tests/test_final_diagnosis_review.py",
+      "source_sha256": "09c87695f26228fc018d96dda9c493e14de6f90aea33e2fd29a0a376811f0e48",
+      "release_sha256": "a636b292ad892ccc2b0edebe59d63c2b7b64674cf43ee25a9ff13beac860a6c6"
+    },
+    {
+      "source": "AutoPrune/LICENSE",
+      "destination": "LICENSE",
+      "source_sha256": "6ca01970c4e66d2d5bebd0a00b55de5b4081017e0f0c97ddb415cda28e3e8ffa",
+      "release_sha256": "6ca01970c4e66d2d5bebd0a00b55de5b4081017e0f0c97ddb415cda28e3e8ffa"
+    },
+    {
+      "source": "openvla-oft/LICENSE",
+      "destination": "integrations/openvla_oft/LICENSE",
+      "source_sha256": "53f449ef3886b1ccd71039d9a75a9f503fda1a6912e4095d1d72e2ac7b8767bd",
+      "release_sha256": "53f449ef3886b1ccd71039d9a75a9f503fda1a6912e4095d1d72e2ac7b8767bd"
+    },
+    {
+      "source": "AutoPrune/scripts/train_cutoff_object_kl_act.py",
+      "destination": "autoprune/oft_observations.py",
+      "source_sha256": "5973212ffeccf3e98f077c6c31927825114687dcf28253d7fc3fe3ad789de259",
+      "extraction": "Selected functions and their dependencies; release adaptations documented",
+      "release_sha256": "8d8c7c9824c21074e0df3811d2baf0d5e1b45ffe811a5ac3d7fe18fd9e3f1030"
+    },
+    {
+      "source": "AutoPrune/agentic_pruning/e2e/run_e2e.py",
+      "destination": "agentic_pruning/e2e/run_e2e.py",
+      "source_sha256": "04a1d0cf330f95ddbeeb1a504c1f4fa1e502083164442a3ba98f4dad737a8d7b",
+      "extraction": "Selected functions and their dependencies; release adaptations documented",
+      "release_sha256": "978546287da9261c8541a597c136c4f7ef76123e4eb0d116b5bc64abf2efc6f1"
+    }
+  ],
+  "release_hash_note": "Refreshed after second self-review; original source hashes are unchanged."
+}

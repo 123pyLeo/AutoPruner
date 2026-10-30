@@ -1,0 +1,76 @@
+{
+  "format": "Historical settings reference, not executable training configuration",
+  "layer_indices": "zero-based indices to REMOVE, never indices to keep",
+  "unknown_values": null,
+  "provenance": "../../provenance/paper_results.json",
+  "rows": [
+    {
+      "suite": "libero_object",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_sr": 0.998,
+      "recovery": "demonstration-based full MoT, not current plugin action-only recipe",
+      "status": "summary counts verified; historical training scope needs exact saved run config",
+      "training_overrides": null
+    },
+    {
+      "suite": "libero_spatial",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_sr": 0.944,
+      "recovery": "demonstration-based full MoT, not current plugin action-only recipe",
+      "status": "summary counts verified; historical training scope needs exact saved run config",
+      "training_overrides": null
+    },
+    {
+      "suite": "libero_10",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "paper_sr": 0.916,
+      "recovery": "demonstration-based full MoT, not current plugin action-only recipe",
+      "status": "summary counts verified; Long checkpoint absent at recorded path",
+      "training_overrides": {
+        "max_steps": 150,
+        "seed": 42,
+        "effective_batch_size": 64,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "max_grad_norm": 1.0,
+        "mixed_precision": "bf16",
+        "lr_scheduler_type": "cosine",
+        "trainable_scope": "full MoT, not action-only"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "removed_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_sr": 0.937,
+      "status": "93.7% is mean of 92.2% and 95.2%, or pooled 937/1000; not one 500-episode evaluation. Repeated-state independence unverified.",
+      "training_overrides": null
+    }
+  ]
+}

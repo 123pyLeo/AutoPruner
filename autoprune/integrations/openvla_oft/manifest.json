@@ -1,0 +1,469 @@
+{
+  "repository": "https://github.com/moojink/openvla-oft.git",
+  "base_commit": "e4287e94541f459edc4feabc4e181f537cd569a8",
+  "patch_sha256": "64912fa19821f88d86c3f005f239b5a1c832f70d45f6978769f24ed884b563fc",
+  "files": [
+    {
+      "path": "experiments/robot/libero/libero_utils.py",
+      "experimental_sha256": "489c16dc8220845b2936ddb81aafd7469061d2009b0edddb2f85703bc51a204f",
+      "release_sha256": "489c16dc8220845b2936ddb81aafd7469061d2009b0edddb2f85703bc51a204f"
+    },
+    {
+      "path": "experiments/robot/libero/run_libero_eval.py",
+      "experimental_sha256": "6dfd500aab253b7fa28225b41fe3f1fbd18c94aa53add74eebfab1830b833c6b",
+      "release_sha256": "d12223c2310be05f373a89f0e7c39ed551b7cff480d0f9f0603228d6e30f40dc"
+    },
+    {
+      "path": "experiments/robot/openvla_utils.py",
+      "experimental_sha256": "23575b61d23a93eb44abb5b365e781bc38ea4f3b17ff709f46627f0f4f0e611c",
+      "release_sha256": "23575b61d23a93eb44abb5b365e781bc38ea4f3b17ff709f46627f0f4f0e611c"
+    },
+    {
+      "path": "experiments/robot/robot_utils.py",
+      "experimental_sha256": "93541b01edd4de49fcc9a1d9249e11fea008b9502fd755096503aaec93773da0",
+      "release_sha256": "93541b01edd4de49fcc9a1d9249e11fea008b9502fd755096503aaec93773da0"
+    },
+    {
+      "path": "phase1/training_signals.py",
+      "experimental_sha256": "8acee732afb98d4baa8c179c195f3194f2054142ab1fa09a69b48d999d635cf5",
+      "release_sha256": "8acee732afb98d4baa8c179c195f3194f2054142ab1fa09a69b48d999d635cf5"
+    },
+    {
+      "path": "prismatic/__init__.py",
+      "experimental_sha256": "244d4c09ae7b191ae233484aed3a3dfb281bd1eb7af4e24392f047d0d42c6ef9",
+      "release_sha256": "244d4c09ae7b191ae233484aed3a3dfb281bd1eb7af4e24392f047d0d42c6ef9"
+    },
+    {
+      "path": "prismatic/conf/__init__.py",
+      "experimental_sha256": "d4fbfdcc771e5c66136f8b8287cd7399201e75ab10ac4be00335726cf0548d5e",
+      "release_sha256": "d4fbfdcc771e5c66136f8b8287cd7399201e75ab10ac4be00335726cf0548d5e"
+    },
+    {
+      "path": "prismatic/conf/datasets.py",
+      "experimental_sha256": "e29bbc6d90efee868307a6627493608da1863638784a0081efaa7f8700b3c11c",
+      "release_sha256": "e29bbc6d90efee868307a6627493608da1863638784a0081efaa7f8700b3c11c"
+    },
+    {
+      "path": "prismatic/conf/models.py",
+      "experimental_sha256": "0d42d771e5e5a2ccc7307b56dac87dfa27a6b078c93f8506006594822f4a6504",
+      "release_sha256": "0d42d771e5e5a2ccc7307b56dac87dfa27a6b078c93f8506006594822f4a6504"
+    },
+    {
+      "path": "prismatic/conf/vla.py",
+      "experimental_sha256": "40304cdf3956fc152ec94359975436561035985d8900bfd3d51ecef92e25d8bb",
+      "release_sha256": "40304cdf3956fc152ec94359975436561035985d8900bfd3d51ecef92e25d8bb"
+    },
+    {
+      "path": "prismatic/extern/__init__.py",
+      "experimental_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "prismatic/extern/hf/__init__.py",
+      "experimental_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "prismatic/extern/hf/configuration_prismatic.py",
+      "experimental_sha256": "68cc5ae34f1b46af3168d8d479cb81bb776965653453fd904aa8eefb6c8f9f68",
+      "release_sha256": "68cc5ae34f1b46af3168d8d479cb81bb776965653453fd904aa8eefb6c8f9f68"
+    },
+    {
+      "path": "prismatic/extern/hf/modeling_prismatic.py",
+      "experimental_sha256": "b5431a074c0025a12e46dc954a5e18d1d73477babb5ae42e3a12ab4b907f33a6",
+      "release_sha256": "b5431a074c0025a12e46dc954a5e18d1d73477babb5ae42e3a12ab4b907f33a6"
+    },
+    {
+      "path": "prismatic/extern/hf/modeling_prismatic_layerprune.py",
+      "experimental_sha256": "3c33655e78cdf2a046f3a2be8577f217d91b55119ffd42557908c87eaf76d427",
+      "release_sha256": "3c33655e78cdf2a046f3a2be8577f217d91b55119ffd42557908c87eaf76d427"
+    },
+    {
+      "path": "prismatic/extern/hf/processing_prismatic.py",
+      "experimental_sha256": "2474a5c3fdd4ff15234924636dc0ead6419c89f49699193be47dbb87510a5425",
+      "release_sha256": "2474a5c3fdd4ff15234924636dc0ead6419c89f49699193be47dbb87510a5425"
+    },
+    {
+      "path": "prismatic/models/__init__.py",
+      "experimental_sha256": "ca4e2452718f72d278742ca5b7b41dd1e77897e5cbda725a54dcfd8744cdbe0c",
+      "release_sha256": "ca4e2452718f72d278742ca5b7b41dd1e77897e5cbda725a54dcfd8744cdbe0c"
+    },
+    {
+      "path": "prismatic/models/action_heads.py",
+      "experimental_sha256": "8e42df65d6407d64d47457286d9be05466d25d8a0f094aa9dfb90de84a9aa7cc",
+      "release_sha256": "8e42df65d6407d64d47457286d9be05466d25d8a0f094aa9dfb90de84a9aa7cc"
+    },
+    {
+      "path": "prismatic/models/backbones/__init__.py",
+      "experimental_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/__init__.py",
+      "experimental_sha256": "94c49353334c38c67f9555d39915ba83e4b712420dfd4bc98cbde10ab20b5897",
+      "release_sha256": "94c49353334c38c67f9555d39915ba83e4b712420dfd4bc98cbde10ab20b5897"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/base_llm.py",
+      "experimental_sha256": "8f6b06fdd1af22c0d3d8fdbeb6a6bd490f0f3fafa97e9514994d24053453321a",
+      "release_sha256": "8f6b06fdd1af22c0d3d8fdbeb6a6bd490f0f3fafa97e9514994d24053453321a"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/llama2.py",
+      "experimental_sha256": "5f775221ec26e02927fc7749f71431e09f998b0651a08ad2279ebc4a4ce14448",
+      "release_sha256": "5f775221ec26e02927fc7749f71431e09f998b0651a08ad2279ebc4a4ce14448"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/mistral.py",
+      "experimental_sha256": "e72025a82d56ded938b6a119d98c81eea8cbf956c8d9f6b2f3bbe9b628fd71e1",
+      "release_sha256": "e72025a82d56ded938b6a119d98c81eea8cbf956c8d9f6b2f3bbe9b628fd71e1"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/phi.py",
+      "experimental_sha256": "e9ff83d1934c9e588b1ebcb8c755bbd20543125767d261f5eb75cbd07ed7c416",
+      "release_sha256": "e9ff83d1934c9e588b1ebcb8c755bbd20543125767d261f5eb75cbd07ed7c416"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/prompting/__init__.py",
+      "experimental_sha256": "6f532ea1f274096e32a5b4bf9b98648f3e0521f1f7e30599487a3230663d7b92",
+      "release_sha256": "6f532ea1f274096e32a5b4bf9b98648f3e0521f1f7e30599487a3230663d7b92"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/prompting/base_prompter.py",
+      "experimental_sha256": "13640ed54b055c0fcd8daf7212be9f4faf76cec779fdd2e0f7ea5a866b0b6d51",
+      "release_sha256": "13640ed54b055c0fcd8daf7212be9f4faf76cec779fdd2e0f7ea5a866b0b6d51"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/prompting/llama2_chat_prompter.py",
+      "experimental_sha256": "85c7c39fe6f625b05d6b8becc4c1f670373d61f4c0414fc79f63591452306579",
+      "release_sha256": "85c7c39fe6f625b05d6b8becc4c1f670373d61f4c0414fc79f63591452306579"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/prompting/mistral_instruct_prompter.py",
+      "experimental_sha256": "3d5f57db4028ef84f8d09fb83e07f2049985c90a74cec471c764e353fe0fc617",
+      "release_sha256": "3d5f57db4028ef84f8d09fb83e07f2049985c90a74cec471c764e353fe0fc617"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/prompting/phi_prompter.py",
+      "experimental_sha256": "0cba9b7821d43102ab7c0e53273033d0c53691df44efd10d91ebb037136bb29f",
+      "release_sha256": "0cba9b7821d43102ab7c0e53273033d0c53691df44efd10d91ebb037136bb29f"
+    },
+    {
+      "path": "prismatic/models/backbones/llm/prompting/vicuna_v15_prompter.py",
+      "experimental_sha256": "0a9967daf1ca2e7796fc9cd8830f73b91996b573cf6bb3e0e3a5af1dfa93be39",
+      "release_sha256": "0a9967daf1ca2e7796fc9cd8830f73b91996b573cf6bb3e0e3a5af1dfa93be39"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/__init__.py",
+      "experimental_sha256": "6e2d34cf72a18596dad8e18c3c6e9983588526ec1ee58a49516be88a91d03e17",
+      "release_sha256": "6e2d34cf72a18596dad8e18c3c6e9983588526ec1ee58a49516be88a91d03e17"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/base_vision.py",
+      "experimental_sha256": "80aa3fe577d3f23641077eaf358859683dde29fed9a2a8ec373c0cec2896579d",
+      "release_sha256": "80aa3fe577d3f23641077eaf358859683dde29fed9a2a8ec373c0cec2896579d"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/clip_vit.py",
+      "experimental_sha256": "ff8347d818230940059b47a58b997ea6d21f92a9b826b9e1cc50277ecd6dcaa6",
+      "release_sha256": "ff8347d818230940059b47a58b997ea6d21f92a9b826b9e1cc50277ecd6dcaa6"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/dinoclip_vit.py",
+      "experimental_sha256": "05afd1bc7c0bb1fa6d4a5ee16948422375861b80cece854b56086eb81604b213",
+      "release_sha256": "05afd1bc7c0bb1fa6d4a5ee16948422375861b80cece854b56086eb81604b213"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/dinosiglip_vit.py",
+      "experimental_sha256": "26f8c65a934965d807cde346d8897403af1990e2b748c4c2e96a441db89ae30e",
+      "release_sha256": "26f8c65a934965d807cde346d8897403af1990e2b748c4c2e96a441db89ae30e"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/dinov2_vit.py",
+      "experimental_sha256": "1b967fe1cba0d585f78ebfc21c904ac412c61fb7464c03c77131cf7a770a0791",
+      "release_sha256": "1b967fe1cba0d585f78ebfc21c904ac412c61fb7464c03c77131cf7a770a0791"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/in1k_vit.py",
+      "experimental_sha256": "a53de7f6ba1f82ae5976741740deefc25062901b88ffe5adf890b349720a7a41",
+      "release_sha256": "a53de7f6ba1f82ae5976741740deefc25062901b88ffe5adf890b349720a7a41"
+    },
+    {
+      "path": "prismatic/models/backbones/vision/siglip_vit.py",
+      "experimental_sha256": "c1f3500eaabe361457cb4110e404676587d231a0a0e1d29c1c8a41111ef3c3ec",
+      "release_sha256": "c1f3500eaabe361457cb4110e404676587d231a0a0e1d29c1c8a41111ef3c3ec"
+    },
+    {
+      "path": "prismatic/models/film_vit_wrapper.py",
+      "experimental_sha256": "5c67e4a375f9cb7928cb5efd588a93fbf607d715dc08317272df662df1e50ff9",
+      "release_sha256": "5c67e4a375f9cb7928cb5efd588a93fbf607d715dc08317272df662df1e50ff9"
+    },
+    {
+      "path": "prismatic/models/layer_pruning.py",
+      "experimental_sha256": "2310ea46af1fe99a5c50745d8779ff11b96b255ca259068d8ac65a827d752909",
+      "release_sha256": "2310ea46af1fe99a5c50745d8779ff11b96b255ca259068d8ac65a827d752909"
+    },
+    {
+      "path": "prismatic/models/load.py",
+      "experimental_sha256": "62958573ff369cbbaeb418bf13208737856828150e2b65e20eeb7c29116c50a9",
+      "release_sha256": "62958573ff369cbbaeb418bf13208737856828150e2b65e20eeb7c29116c50a9"
+    },
+    {
+      "path": "prismatic/models/materialize.py",
+      "experimental_sha256": "b3fca60a822b4765644a1bbbe8402b6a6537f642de43d089faa560658cbb6e49",
+      "release_sha256": "b3fca60a822b4765644a1bbbe8402b6a6537f642de43d089faa560658cbb6e49"
+    },
+    {
+      "path": "prismatic/models/projectors.py",
+      "experimental_sha256": "3ac1ef82215b30792bdaf9c980cf8b93046dec1b220597cfc0f536bfe5ebdf42",
+      "release_sha256": "3ac1ef82215b30792bdaf9c980cf8b93046dec1b220597cfc0f536bfe5ebdf42"
+    },
+    {
+      "path": "prismatic/models/registry.py",
+      "experimental_sha256": "eacdeb9201cd9fd1828d7ad7ffe2133f89e0de872c31f76b0038838b8a7dd493",
+      "release_sha256": "eacdeb9201cd9fd1828d7ad7ffe2133f89e0de872c31f76b0038838b8a7dd493"
+    },
+    {
+      "path": "prismatic/models/vlas/__init__.py",
+      "experimental_sha256": "66dcd212cef04c4ed7e62db5efad417b8019565a5d5f6f5eeeb132a493a45f8a",
+      "release_sha256": "66dcd212cef04c4ed7e62db5efad417b8019565a5d5f6f5eeeb132a493a45f8a"
+    },
+    {
+      "path": "prismatic/models/vlas/openvla.py",
+      "experimental_sha256": "5a54e9f2f7975b7e8fa8676ddfb6ce3320b397f0bdd3632167a7044dbeb9b47b",
+      "release_sha256": "5a54e9f2f7975b7e8fa8676ddfb6ce3320b397f0bdd3632167a7044dbeb9b47b"
+    },
+    {
+      "path": "prismatic/models/vlms/__init__.py",
+      "experimental_sha256": "bf58ab5c127b6df35f5d881357ec5aa24e0b46f2916c527612af484b95c7c448",
+      "release_sha256": "bf58ab5c127b6df35f5d881357ec5aa24e0b46f2916c527612af484b95c7c448"
+    },
+    {
+      "path": "prismatic/models/vlms/base_vlm.py",
+      "experimental_sha256": "ea291ec87810abfc4be2c4fcd942708c33a47b0601aa50ffa9e581a736dcd38c",
+      "release_sha256": "ea291ec87810abfc4be2c4fcd942708c33a47b0601aa50ffa9e581a736dcd38c"
+    },
+    {
+      "path": "prismatic/models/vlms/prismatic.py",
+      "experimental_sha256": "d2dc1b53f715a4f1dd6849842978959250c6f5bf48792d46b93f71c303e7da2f",
+      "release_sha256": "d2dc1b53f715a4f1dd6849842978959250c6f5bf48792d46b93f71c303e7da2f"
+    },
+    {
+      "path": "prismatic/overwatch/__init__.py",
+      "experimental_sha256": "bd036db0376e394f189a420f798d0fa0b93637b72004419ccaaf316b8b5e757d",
+      "release_sha256": "bd036db0376e394f189a420f798d0fa0b93637b72004419ccaaf316b8b5e757d"
+    },
+    {
+      "path": "prismatic/overwatch/overwatch.py",
+      "experimental_sha256": "3f2342cd90dec06655e599975eb1a037d96602b453f6b720557125f311b15c8d",
+      "release_sha256": "3f2342cd90dec06655e599975eb1a037d96602b453f6b720557125f311b15c8d"
+    },
+    {
+      "path": "prismatic/training/__init__.py",
+      "experimental_sha256": "e1e171d201818dbd4552f51659d1dd14e8958658c7af12993831f701e075e0fc",
+      "release_sha256": "e1e171d201818dbd4552f51659d1dd14e8958658c7af12993831f701e075e0fc"
+    },
+    {
+      "path": "prismatic/training/materialize.py",
+      "experimental_sha256": "80d693f2144989ac5687fb243b4ca9a6648e25df10c83cf493f0010b5f657b12",
+      "release_sha256": "80d693f2144989ac5687fb243b4ca9a6648e25df10c83cf493f0010b5f657b12"
+    },
+    {
+      "path": "prismatic/training/metrics.py",
+      "experimental_sha256": "8f5900c0e51d50f05d02266caa1772f0640682ce5e4eb8c8fb795c1775660e32",
+      "release_sha256": "8f5900c0e51d50f05d02266caa1772f0640682ce5e4eb8c8fb795c1775660e32"
+    },
+    {
+      "path": "prismatic/training/replacement_adapter.py",
+      "experimental_sha256": "3f9573db3f479999901d1ab3ed1794a040816189f4eb3314f66c59e9b1e8c7d9",
+      "release_sha256": "3f9573db3f479999901d1ab3ed1794a040816189f4eb3314f66c59e9b1e8c7d9"
+    },
+    {
+      "path": "prismatic/training/strategies/__init__.py",
+      "experimental_sha256": "042da41c24f581b4c84ff63fc5b1ce510a37e4da2c90a5ecc848b8f1244fcae3",
+      "release_sha256": "042da41c24f581b4c84ff63fc5b1ce510a37e4da2c90a5ecc848b8f1244fcae3"
+    },
+    {
+      "path": "prismatic/training/strategies/base_strategy.py",
+      "experimental_sha256": "503ab55f9853b875b1693cceb6d0d6b62a6af21eca7f5436f7b7ef70f243a4cd",
+      "release_sha256": "503ab55f9853b875b1693cceb6d0d6b62a6af21eca7f5436f7b7ef70f243a4cd"
+    },
+    {
+      "path": "prismatic/training/strategies/ddp.py",
+      "experimental_sha256": "0060ab71c4de65773532a5b7c4e16be697a97f2f52199b2dc165157deb67fa90",
+      "release_sha256": "0060ab71c4de65773532a5b7c4e16be697a97f2f52199b2dc165157deb67fa90"
+    },
+    {
+      "path": "prismatic/training/strategies/fsdp.py",
+      "experimental_sha256": "98b77644f6599400539e08b32f0ee3080a54742630fc7cb1208ac312be0273bd",
+      "release_sha256": "98b77644f6599400539e08b32f0ee3080a54742630fc7cb1208ac312be0273bd"
+    },
+    {
+      "path": "prismatic/training/teacher_cache.py",
+      "experimental_sha256": "c7ff673a611bf1aedb3b745942a29dfdfbcb7313ae964af9fd6170a9dd71af02",
+      "release_sha256": "636377b0fcf3683c350374fb2fa4af0f8508d63ce88a36c0906b252bef3a4028"
+    },
+    {
+      "path": "prismatic/training/train_utils.py",
+      "experimental_sha256": "6ecc95436fde63ce023e2ba7151826d96a915b5d5c2ec5698750022580b0e7b3",
+      "release_sha256": "6ecc95436fde63ce023e2ba7151826d96a915b5d5c2ec5698750022580b0e7b3"
+    },
+    {
+      "path": "prismatic/util/__init__.py",
+      "experimental_sha256": "8ab7190ed1f1bd087966fcc59f35f9a7b4b315dd7b17f68a6a7ed6e335fc7380",
+      "release_sha256": "8ab7190ed1f1bd087966fcc59f35f9a7b4b315dd7b17f68a6a7ed6e335fc7380"
+    },
+    {
+      "path": "prismatic/util/batching_utils.py",
+      "experimental_sha256": "a41d58f7baa40ccefe92be2727c19963a720a41feeada301a09cf01c8b261feb",
+      "release_sha256": "a41d58f7baa40ccefe92be2727c19963a720a41feeada301a09cf01c8b261feb"
+    },
+    {
+      "path": "prismatic/util/data_utils.py",
+      "experimental_sha256": "431ef4210296c2165142b1226a4adad985d99d0391cd822f1630e98fbb6c9d7d",
+      "release_sha256": "8a4d5f8cf1a285d21dd62ad0e36cdaead3d5d02eb02a80be4cf40423d2d57fb2"
+    },
+    {
+      "path": "prismatic/util/nn_utils.py",
+      "experimental_sha256": "7aa0562eab374f0585bb53639b861f06b6c44b82384e938dda9cd32d844bc0d0",
+      "release_sha256": "7aa0562eab374f0585bb53639b861f06b6c44b82384e938dda9cd32d844bc0d0"
+    },
+    {
+      "path": "prismatic/util/torch_utils.py",
+      "experimental_sha256": "a70e3b8d7e24b15a5d8abfa94f1c596ea70a9a85c86b50e8d8f963af51ff3304",
+      "release_sha256": "a70e3b8d7e24b15a5d8abfa94f1c596ea70a9a85c86b50e8d8f963af51ff3304"
+    },
+    {
+      "path": "prismatic/vla/__init__.py",
+      "experimental_sha256": "bfc31eb7e16374695cc0da879bb1e43451395ee64144da896f00e2187862f069",
+      "release_sha256": "bfc31eb7e16374695cc0da879bb1e43451395ee64144da896f00e2187862f069"
+    },
+    {
+      "path": "prismatic/vla/action_tokenizer.py",
+      "experimental_sha256": "fdc98fcbf5b0926ef2181db71946d23ffbfa052cf8443dc933d52c42a191352c",
+      "release_sha256": "fdc98fcbf5b0926ef2181db71946d23ffbfa052cf8443dc933d52c42a191352c"
+    },
+    {
+      "path": "prismatic/vla/constants.py",
+      "experimental_sha256": "5b53c3a07cf1ed27bf94a88da9929e82818792d6fdc32343d133afea1a0acf3d",
+      "release_sha256": "5b53c3a07cf1ed27bf94a88da9929e82818792d6fdc32343d133afea1a0acf3d"
+    },
+    {
+      "path": "prismatic/vla/datasets/__init__.py",
+      "experimental_sha256": "da5e7fc753267f060b24bafd3bf8867836d2e04ea3a3eb9f3fddf14332781e86",
+      "release_sha256": "da5e7fc753267f060b24bafd3bf8867836d2e04ea3a3eb9f3fddf14332781e86"
+    },
+    {
+      "path": "prismatic/vla/datasets/datasets.py",
+      "experimental_sha256": "b97b61c2b8a6cdc643d2c0f559bb403dde793fa8aba382f31f5aedfb073ed692",
+      "release_sha256": "8022e7598b5f39eb4f4edb25213f6bd65d01a50a457975b3bbd2bae561aae1f9"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/__init__.py",
+      "experimental_sha256": "51cca896330d5fb7b36c1d4741ede338fb4f1f21bcbc461c31bd44ce0d97656e",
+      "release_sha256": "51cca896330d5fb7b36c1d4741ede338fb4f1f21bcbc461c31bd44ce0d97656e"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/cache_identity.py",
+      "source_role": "Release integration addition using official TFDS record IDs",
+      "release_sha256": "5828b4c8e11573a14425d80a064138637b5082e151bc8e7b72e34b03f6728939"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/dataset.py",
+      "experimental_sha256": "af0812949d019e349026f92584a1ebe187ad9f74acc987a9f16ea86ed2e62cf5",
+      "release_sha256": "154f5a025ad7ac5c1f667cab1131ae809825fa30a852a9b87e5d5dae9ff6d190"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/obs_transforms.py",
+      "experimental_sha256": "a4fca99160ff5dafa51b6e3a2d466014222c62ac8fa4ac57e57af5731a3afe35",
+      "release_sha256": "a4fca99160ff5dafa51b6e3a2d466014222c62ac8fa4ac57e57af5731a3afe35"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/oxe/__init__.py",
+      "experimental_sha256": "3c78a9e413a053b7529def791a621ef273d76bc6cc6a32cf1be77d8b77e94d16",
+      "release_sha256": "3c78a9e413a053b7529def791a621ef273d76bc6cc6a32cf1be77d8b77e94d16"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/oxe/configs.py",
+      "experimental_sha256": "5763a8f6ce5af801dc90eda78e9c19279296bd9affcb77de5b807877e54b1fb5",
+      "release_sha256": "5763a8f6ce5af801dc90eda78e9c19279296bd9affcb77de5b807877e54b1fb5"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/oxe/materialize.py",
+      "experimental_sha256": "ee9830de68dee1e4b344d013bbd8e662d7d2f8e4ef5f988dcd41f51229cf6591",
+      "release_sha256": "ee9830de68dee1e4b344d013bbd8e662d7d2f8e4ef5f988dcd41f51229cf6591"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/oxe/mixtures.py",
+      "experimental_sha256": "0d31d64f6cea1817e890868862ee4aeb16837cd0bfebf5c18c4facb5f211724f",
+      "release_sha256": "0d31d64f6cea1817e890868862ee4aeb16837cd0bfebf5c18c4facb5f211724f"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/oxe/transforms.py",
+      "experimental_sha256": "68bcaf1c9fd2c25585d00492604414663d135fa81bd36f1932b17ef4dbaa4a67",
+      "release_sha256": "68bcaf1c9fd2c25585d00492604414663d135fa81bd36f1932b17ef4dbaa4a67"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/oxe/utils/droid_utils.py",
+      "experimental_sha256": "6eddeaf36eb335656435f8773ac715ab966994c2b97cf72f257751140c3c4099",
+      "release_sha256": "6eddeaf36eb335656435f8773ac715ab966994c2b97cf72f257751140c3c4099"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/traj_transforms.py",
+      "experimental_sha256": "921056872f67a35d896f79f2e7f30353fbd94a831f5fb079d9fc1e5b7e58fd08",
+      "release_sha256": "921056872f67a35d896f79f2e7f30353fbd94a831f5fb079d9fc1e5b7e58fd08"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/utils/__init__.py",
+      "experimental_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/utils/data_utils.py",
+      "experimental_sha256": "dce2601fce081afe49c9649eb906330a2042c88dd3a5d77a226f7b17731814a4",
+      "release_sha256": "dce2601fce081afe49c9649eb906330a2042c88dd3a5d77a226f7b17731814a4"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/utils/goal_relabeling.py",
+      "experimental_sha256": "2333b62c507ea1c2b94b9d9cec3c884e92da18ead2f39936b5a2e138501b22d6",
+      "release_sha256": "2333b62c507ea1c2b94b9d9cec3c884e92da18ead2f39936b5a2e138501b22d6"
+    },
+    {
+      "path": "prismatic/vla/datasets/rlds/utils/task_augmentation.py",
+      "experimental_sha256": "aa92046aa8dd849a23631ff36d219a1e2588b254049e2f8ed7f51bf6daf7fdfd",
+      "release_sha256": "aa92046aa8dd849a23631ff36d219a1e2588b254049e2f8ed7f51bf6daf7fdfd"
+    },
+    {
+      "path": "prismatic/vla/materialize.py",
+      "experimental_sha256": "dbc1b0c88e3acb926829e7d86f00b7aef52b6679af641f5ad328aa59d99f7ab5",
+      "release_sha256": "dbc1b0c88e3acb926829e7d86f00b7aef52b6679af641f5ad328aa59d99f7ab5"
+    },
+    {
+      "path": "vla-scripts/cache_teacher_outputs.py",
+      "experimental_sha256": "a83a94ab3f68435398001535ed9da97b3bd65e768ee5e083715d64c472b6617f",
+      "release_sha256": "11580d3247b14c203c8c2be83f002c04f80daadedaff8a8cf9e6a64cebc7b84c"
+    },
+    {
+      "path": "vla-scripts/finetune_layer_pruning_cached.py",
+      "experimental_sha256": "284494a23f1f5b5749d6213665c1a05dfc50cbcc736d2386e168a216a24c3418",
+      "release_sha256": "733266c62afe13fdd9da5ceab8382894db04ddb3502270790a3708c8c75c58bd"
+    },
+    {
+      "path": "vla-scripts/finetune_phase2_adapter.py",
+      "experimental_sha256": "6559f0ed5a32d7d41fafcd78c6d04756b0e5b8f89069d569ed70d24bc83910d7",
+      "release_sha256": "fa71339f0acc4f33e8d7cda12e4dee76b1b33203fffc27b5e4f104ac27899188"
+    },
+    {
+      "path": "vla-scripts/finetune_phase2_only.py",
+      "experimental_sha256": "291234bac070a10a550c2bf02ff774cfa338003e74d98a7410c7b56c10b7e4c4",
+      "release_sha256": "291234bac070a10a550c2bf02ff774cfa338003e74d98a7410c7b56c10b7e4c4"
+    }
+  ],
+  "changes_from_experimental_source": [
+    "Replace private workspace paths with placeholders",
+    "Expose and seed training RNG via explicit seed; historical training seed remains unknown",
+    "Teacher cache v2: official TFDS record IDs and original frame indices, end-to-end batch propagation, finite complete cache generation, strict miss handling and legacy-format refusal",
+    "Remove unrelated evaluator experiments and private-path hooks (CIVR, LoRA/ORAR/task modules, ridge/magnitude compensation); retain selected layer-mask and boundary-adapter paths"
+  ],
+  "teacher_cache_format": "autoprune-teacher-v2"
+}

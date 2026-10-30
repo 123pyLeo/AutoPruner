@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autopruner-vla"
+version = "0.1.0rc1"
+description = "Agentic depth pruning for vision-language-action policies"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.24,<2", "requests>=2.31"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "wheel"]
+oft-probe = ["torch==2.2.0", "torchvision==0.17.0", "transformers @ git+https://github.com/moojink/transformers-openvla-oft.git@bc339d9ad707454c0c115970db43c260067c61ab", "timm==0.9.10",
+             "omegaconf==2.3.0", "h5py>=3.10", "opencv-python<4.12", "accelerate", "rich"]
+
+[project.scripts]
+autopruner = "autoprune.run_e2e:main"
+
+[tool.setuptools.packages.find]
+include = ["autoprune*", "agentic_pruning*", "mask_probe_lib*", "recovery_lib*"]
+exclude = ["tests*", "*.tests", "*.tests.*"]
+
+[tool.setuptools.package-data]
+agentic_pruning = ["data/*.json"]
+"autoprune.integrations.openvla_oft" = ["*.patch", "*.json", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

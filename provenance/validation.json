@@ -1,0 +1,124 @@
+{
+  "tests": {
+    "exit_code": 0
+  },
+  "wheel_build": {
+    "exit_code": 0
+  },
+  "wheel_cpu_smoke": {
+    "exit_code": 0
+  },
+  "wheel_resources": {
+    "exit_code": 0
+  },
+  "source_scan": {
+    "private_workspace_path_files": [],
+    "credential_pattern_files": [],
+    "symlinks": []
+  },
+  "original_sources_unchanged": true,
+  "wheel_sha256": "8e922537cb256362d03fd313f238e63f8a39b3180d31a168908661db40945832",
+  "gpu_training_or_rollouts_run": true,
+  "release_status": "private validation candidate; full OFT bounded workflow and fresh installation verified; StarVLA/FastWAM delivery incomplete; use a clean history-free publication package",
+  "test_count": 106,
+  "oft_probe_wrapper_import": true,
+  "new_server_tools_tests": true,
+  "setup_script_syntax_checked": true,
+  "fresh_gpu_environment_installed": true,
+  "new_server_wheel_entrypoints": true,
+  "local_validation_scope": "Current CPU contracts, wheel packaging and source isolation; dated OFT/GPU and custom-plugin acceptance are recorded in their linked reports",
+  "independent_server": {
+    "status": "passed_user_report",
+    "scope": [
+      "environment_installation",
+      "model_loading_and_probe",
+      "bounded_rollout",
+      "recovery_training",
+      "physical_export_and_reload"
+    ],
+    "raw_artifacts_reviewed": false,
+    "paper_metrics_reproduced": false,
+    "applies_to": "Earlier candidate before the second-review fixes; kept separate from current local bounded acceptance."
+  },
+  "custom_plugin_smoke": true,
+  "fastwam_reference_patch_apply_check": true,
+  "second_review": {
+    "status": "engineering fixes verified; release acceptance incomplete",
+    "report": "provenance/SELF_REVIEW.md",
+    "real_model_rerun_after_fixes": "bounded full OFT software chain; see framework_acceptance",
+    "teacher_cache_real_data_matching_validated": true,
+    "all_github_branches_and_history_scanned": false,
+    "validated_cache_format": "autoprune-teacher-v2"
+  },
+  "cache_real_data_audit": {
+    "status": "completed; rare observation aliases and missing legacy entries confirmed",
+    "report": "provenance/CACHE_DATA_AUDIT.md",
+    "episodes": 1693,
+    "samples": 261614,
+    "ambiguous_groups": 3,
+    "samples_in_ambiguous_groups": 14,
+    "legacy_cache_missing_samples": 30,
+    "actual_model_inputs_verified": 14,
+    "online_teacher_recomputed": false,
+    "robot_performance_effect_measured": false,
+    "training_pipeline_modified": false,
+    "portable_full_object_scan_repeated": true
+  },
+  "cache_v2_fix": {
+    "status": "implemented_and_verified",
+    "report": "provenance/CACHE_V2_FIX.md",
+    "evidence": "provenance/cache_v2_validation.json",
+    "real_data_samples": 261614,
+    "unique_sample_ids": 261614,
+    "real_teacher_gpu_samples": 14,
+    "native_phase2_forward_backward_samples": 2,
+    "native_phase2_optimizer_steps": 0,
+    "image_augmentation_identity_verified": true,
+    "full_training_cache_regenerated": false,
+    "full_recovery_training_rerun": false,
+    "robot_success_rates_rerun": false,
+    "bounded_recovery_validation": "Complete 17-sample fixture cache and two actual two-step recovery candidates; full dataset not rerun"
+  },
+  "gpu_teacher_inference_run": true,
+  "gpu_native_forward_backward_diagnostic_run": true,
+  "previous_gpu_validation_pending_reason": "All four GPUs were busy (97-100% utilization); free memory 1195-13927 MiB. No training or rollout launched.",
+  "framework_acceptance": {
+    "status": "passed_bounded_software_integration",
+    "report": "docs/FRAMEWORK_ACCEPTANCE.md",
+    "evidence": "provenance/framework_acceptance.json",
+    "full_paper_reproduction": false
+  },
+  "model_plugin_review": {
+    "status": "passed_software_contracts_and_bounded_oft_compatibility",
+    "report": "docs/MODEL_PLUGIN_REVIEW.md",
+    "evidence": "provenance/model_plugin_validation.json",
+    "real_second_architecture_verified": false
+  },
+  "independent_server_latest": {
+    "commit": "761b676",
+    "status": "passed_user_report",
+    "environment": "reused existing GPU environment",
+    "tests_passed": 75,
+    "direct_and_two_step_recovery_export_reload_passed": true,
+    "max_action_errors": [
+      0.0,
+      0.0
+    ],
+    "single_episode_successes": [
+      0,
+      0
+    ],
+    "episodes_per_check": 1,
+    "fresh_environment_installation": false,
+    "raw_artifacts_reviewed": false,
+    "paper_metrics_reproduced": false
+  },
+  "night_review": {
+    "report": "docs/OPEN_SOURCE_REVIEW.md",
+    "evidence": "provenance/night_review_20261030.json",
+    "fresh_gpu_runtime": "passed",
+    "fresh_api_to_checkpoint": "passed_bounded",
+    "current_repository_visibility_change": "blocked",
+    "three_model_weight_delivery": "incomplete"
+  }
+}
